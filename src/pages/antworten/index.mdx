@@ -1,0 +1,112 @@
+import LayoutConstraint from '../../components/layout-constraint';
+import Image from "../../components/layout/image";
+import Page from "../../components/layout/page";
+import { bgColors } from "../../styles/variables";
+import IllustratedText from "../../components/illustratedText";
+import ChapterNavigation from "../../components/chapterNavigation";
+import Scrollspy from "react-scrollspy";
+import Modal from "../../components/modal";
+import { AffordabilityMapDeckel } from "../../components/affordability-map/index";
+import Plot3_2_4 from '../../components/plot/3_2_4';
+import Plot3_2_5 from '../../components/plot/3_2_5';
+import Plot3_3_4 from '../../components/plot/3_3_4';
+import Link from 'gatsby-link';
+
+<Scrollspy
+  items={["protest-wirkt", "mieten-deckeln", "grosskonzerne-enteignen"]}
+  className="scrollspyContainer"
+  currentClassName="is-current"
+>
+  <li>
+    <a href="#protest-wirkt">Protest wirkt</a>
+  </li>
+  <li>
+    <a href="#mieten-deckeln">Mieten deckeln</a>
+  </li>
+  <li>
+    <a href="#grosskonzerne-enteignen">Großkonzerne enteignen</a>
+  </li>
+</Scrollspy>
+
+<Page className="page--antworten">
+  <IllustratedText imgSrc="antworten_2bg.png" id="protest-wirkt">
+    <h1>Protest <em>wirkt</em></h1>
+    <p>
+      In Berlin wehren sich immer mehr Mieter*innen gegen Spekulation und drohende Verdrängung. Ob gegen <a target="_blank" rel="noopener noreferrer" href="http://deutsche-wohnen-protest.de/">Mieterhöhungen</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.besetzen.org/">Leerstand</a> oder <a target="_blank" rel="noopener noreferrer" href="http://www.wem-gehoert-kreuzberg.de/index.php/bleibe-n/4043-wohnen-heisst-bleiben-eigenbedarf-kennt-keine-kuendigung">Eigenbedarfskündigung</a>: <strong>Der Protest wird breiter und lauter</strong>. Im April 2019 gingen rund <a target="_blank" rel="noopener noreferrer" href="https://www.tagesspiegel.de/berlin/mietenwahnsinn-demo-in-berlin-einig-im-protest-gespalten-bei-enteignungen/24190590.html">40&nbsp;000 Mieter*innen gegen den Mietenwahnsinn</a> auf die Straße und forderten eine grundlegende Kehrtwende in der Wohnungspolitik.
+    </p>
+    <p>
+      Der Protest der Mieter*innen zeigt Wirkung. Als erste vielversprechende Maßnahme will die <strong>rot-rot-grüne Landesregierung einen Mietendeckel in Berlin einführen</strong>.
+    </p>
+  </IllustratedText>
+  <LayoutConstraint id="mieten-deckeln">
+    <h1><em>Mietendeckel</em> – runter mit der Miete</h1>
+    <p>
+      Mit einem Mietendeckel will Berlins Landesregierung die <strong>außer Kontrolle geratenen Mietpreise einfangen</strong>. Der Mietendeckel soll Anfang 2020 in Kraft treten und für fünf Jahre gelten. Nach den <a target="_blank" rel="noopener noreferrer" href="https://stadtentwicklung.berlin.de/wohnen/wohnraum/mietendeckel/download/Gesetzentwurf-Neuregelung-Mietenbegrenzung-MietenWoGBln.pdf">jetzigen Plänen</a> besteht der Mietendeckel aus zwei Maßnahmen: <strong>Mietenstopp und Mietabsenkungen</strong>. Dank dem <strong>Mietenstopp</strong> dürfen in Berlin die meisten Mieten für fünf Jahren nicht mehr erhöht werden. Ob und wie viel du mit einer <strong>Mietabsenkung</strong> sparen würdest, kannst mit unserem <a target="_blank" rel="noopener noreferrer" href="https://mietendeckelrechner.de"><strong>Mietendeckelrechner</strong></a> herausfinden.
+    </p>
+    <p>
+      Bei <strong>Neuvermietungen</strong> soll nur noch die Vormiete bzw. wenn diese über der jeweiligen Mietobergrenze lag, die Mietobergrenze (je nach Baujahr unterschiedlich) verlangt werden können. Auf der folgenden Karte kannst du sehen, <strong>wie sich die Mietobergrenzen auf die Angebotslage zwischen April 2018 und Oktober 2019 </strong> <Modal modalLink="ausgewirkt hätten"><p>Um das Szenario von Mietobergrenzen zu berechnen, haben wir allen Wohnungen mit Baujahr älter als 2013 ihre jeweilige Mietobergrenze zugeordnet. Ein Aufschlag von 1&nbsp;€/m² für überwiegend wohnwertsteigernde Merkmale gemäß § 5 Abs. 3 MietenWoG Bln wurde berücksichtigt. Bei öffentlich gefördertem Wohnraum wurde die Mietobergrenze nicht angewendet (§ 1 Nr. 1 MietenWoG Bln).</p></Modal>. Grundlage für die Berechnungen ist der <a target="_blank" rel="noopener noreferrer" href="https://stadtentwicklung.berlin.de/wohnen/wohnraum/mietendeckel/download/Gesetzentwurf-Neuregelung-Mietenbegrenzung-MietenWoGBln.pdf">Gesetzentwurf des Mietendeckels</a>. Klicke auf einen Stadtteil, um Mietangebote zu sehen.
+    </p>
+  </LayoutConstraint>
+  <AffordabilityMapDeckel />
+  <LayoutConstraint>
+    <p>
+      Mietobergrenzen könnten die Mieten bei Neuvermietung tatsächlich wirksam senken. Die aktuell für einen Großteil der Berliner*innen <strong>nicht mehr leistbaren Ortsteile könnten so wieder erschwinglich werden.</strong> So könnte der sozialen Spaltung entgegen gewirkt werden. Auch der im ersten Kapitel analysierte <Link to="/leistbarkeit/#unter-verdrangungsdruck"><strong>Verdrängungsdruck dürfte abnehmen</strong></Link>, denn der Anreiz für Vermieter*innen, bestehende Verträge zwecks Mieterhöhung aufzulösen, würde in vielen Fällen entfallen.
+    </p>
+    <Plot3_2_4 source="/visualization-data/3.2.4_leistbare_wohnflaeche_mietendeckel.csv" title="Mit Mietendeckel mehr leistbarer Wohnraum für alle" subtitle="Wohnfläche, die sich ein Haushalt mit Durchschnittseinkommen bei Mietobergrenzen leisten könnte – nach Personenanzahl und Bezirk.">
+      <p>Die leistbare Wohnfläche wurde folgendermaßen berechnet: Zunächst wurde der durchschnittliche Quadratmeterpreis unter der Annahme der im <a target="_blank" rel="noopener noreferrer" href="https://stadtentwicklung.berlin.de/wohnen/wohnraum/mietendeckel/download/Gesetzentwurf-Neuregelung-Mietenbegrenzung-MietenWoGBln.pdf">Gesetzentwurf</a> genannten Mietobergrenzen für alle in Frage kommenden Wohnungen ermittelt. Dann wurden die maximal leistbaren Mietausgaben (30&nbsp;% des Netto-Haushaltseinkommens) durch diesen Quadratmeterpreis geteilt – und ergaben die leistbare Wohnfläche.</p>
+      <p>Es sei an dieser Stelle erinnert, dass <a target="_blank" rel="noopener noreferrer" href="https://www.statistik-berlin-brandenburg.de/publikationen/stat_berichte/2017/SB_A01-11-00_2016j01_BE.pdf">5 und mehr Personen-Haushalte in Berlin im Durchschnitt</a> weniger Einkommen haben, als 3- oder 4-Personen-Haushalte. Deshalb liegt ihre leistbare Wohnfläche niedriger.</p>
+      <p>Hinweis: Für manche Bezirke liegt eine zu geringe Anzahl an Wohnungsangeboten, die für 5 und mehr Personen im Haushalt in Frage kommen, vor. Deshalb fehlen an den entsprechenden Stellen in der Grafik die Datenpunkte.</p>
+    </Plot3_2_4>
+    <p><strong>Niedrigere Mieten bedeuten</strong> aus der individuellen Perspektive von Mieter*innen <strong>mehr leistbare Wohnfläche</strong>. Durch die Einführung von Mietobergrenzen könnte sich ein vierköpfiger Haushalt mit durchschnittlichem Einkommen nun 103&nbsp;m², statt nur 69&nbsp;m² Wohnfläche leisten (vgl. <Link to="/leistbarkeit/#berlin-fur-alle">Kapitel „Leistbarkeit“</Link>).</p>
+    <Plot3_2_5 source="/visualization-data/3.2.5_md_ohne_mit_mietendeckel.csv" title="Mietobergrenzen wirken stark im Altbau" subtitle="Durchschnittliche Nettokaltmiete bei Angeboten ohne und mit Mietendeckel nach Baujahresklassen.">
+      <p>Die hier verwendeten Mietobergrenzen wurden dem aktuellen <a target="_blank" rel="noopener noreferrer" href="https://stadtentwicklung.berlin.de/wohnen/wohnraum/mietendeckel/download/Gesetzentwurf-Neuregelung-Mietenbegrenzung-MietenWoGBln.pdf">Gesetzentwurf des Mietendeckels</a> entnommen. Zur Berechnung der Durchschnitte wurde hier das arithmetische Mittel verwendet.</p>
+    </Plot3_2_5>
+    <p>
+      Besonders stark würden Mietobergrenzen auf die Angebote im Altbau wirken. Für Wohnungen, die vor 1918 gebaut wurden, schätzen wir eine durchschnittliche Absenkung der Nettokaltmiete bei Neuvermietung <strong>um die Hälfte (von 13&nbsp;€/m² auf 6,58&nbsp;€/m²)</strong>.
+    </p>
+    <p>
+      Auch wenn die Einführung eines Mietendeckels sicher zu einer Verschnaufpause für Mieter*innen führen würde, <strong>bleiben die angedachten Maßnahmen in ihrer Wirkung beschränkt</strong>. Sie sind teils <a target="_blank" rel="noopener noreferrer" href="https://www.berliner-mieterverein.de/presse/pressearchiv/berliner-landesmietendeckel-berliner-mieterverein-schlaegt-mit-10-prozent-grenze-einfache-und-umsetzbare-mietabsenkungs-regelung-vor-pm1935.htm">schwierig umzusetzen</a> und schützen nicht langfristig vor Spekulation. Vor allem die <strong>Zugangsschwierigkeiten zu Wohnraum für Benachteiligte</strong> und die <strong>undemokratischen Verwaltung</strong> des Wohnraums würden durch den Mietendeckel <strong>nicht angegangen</strong>. Eine langfristige Lösung dieser Probleme verspricht die Vergesellschaftung und Demokratisierung von Wohnungsbeständen.
+    </p>
+  </LayoutConstraint>
+  <LayoutConstraint id="grosskonzerne-enteignen">
+    <h1>Wohnungen privater Immo&shy;bi&shy;lien&shy;kon&shy;zerne <em>ver&shy;ge&shy;sell&shy;schaf&shy;ten</em></h1>
+    <p>
+      Der Volksentscheid „<strong>Deutsche Wohnen &amp; Co. enteignen!</strong>“ möchte den Immobilienbestand von Unternehmen mit über 3&nbsp;000 Wohnungen in öffentliches Eigentum überführen und demokratisch durch die Mieter*innen verwalten lassen.
+    </p>
+    <p>
+      <strong>Artikel 15 des Grundgesetzes</strong> ermöglicht eine Vergesellschaftung von Privateigentum im Interesse der Allgemeinheit gegen Entschädigung. Zahlreiche Gutachten bestätigen, dass das <strong>Land Berlin das Recht hat, eine solche Vergesellschaftung</strong> angesichts der aktuellen Wohnungskrise durchzuführen. Bei einer Enteignung könnten die Mietpreise wesentlich stärker gesenkt werden, als dies beim Mietendeckel vorgesehen ist. Eine solche Maßnahme würde <strong>langfristig bezahlbaren Wohnraum</strong> sichern. Darüber hinaus könnte die Wohnungsvergabe und die Häuser selbst nach den Wünschen der Mieter*innen gestaltet werden. Menschen, die auf dem privaten Wohnungsmarkt wenig Chancen haben, könnten bei der Vergabe bevorzugt werden.
+    </p>
+    <p>
+      Auch <strong>Kleingewerbe, Kulturräume und Kitas</strong> könnten davon profitieren. Sie spielen eine <strong>unverzichtbare soziale Rolle im Kiezleben</strong>. Bisher genießen sie jedoch keinen Mieterschutz. Durch eine Vergesellschaftung könnten auch sie vor Verdrängung geschützt werden.
+    </p>
+  </LayoutConstraint>
+  <IllustratedText textLeft imgSrc="expropriate.png">
+    <p>
+      Wir haben alle zwischen April 2018 und Oktober 2019 angebotenen <Modal modalLink="Wohnungen der Anbieter">
+        <p>
+          Die Initiative „Deutsche Wohnen &amp; Co. enteignen!“ möchte die Berliner Bestände aller privaten Unternehmen vergesellschaften, sofern diese mehr als 3&nbsp;000 Wohnungen in Berlin besitzen. Zu diesen Unternehmen gehören unter anderem die Deutsche Wohnen, Vonovia, ADO Immobilien, Akelius, Covivio, Grand City Property und BGP. In unserer Datenbank fanden sich insgesamt über 12&nbsp;200 Angebote dieser Anbieter. Wohnungsinserate anderer Anbieter, die möglicherweise enteignet werden sollen, lagen uns nicht vor.
+        </p>
+        </Modal><strong>, welche die Initiative „Deutsche Wohnen &amp; Co. enteignen!“ vergesellschaften möchte</strong>, aus unseren Daten gefiltert. Es waren über 12&nbsp;200. Hier liegen sie.
+    </p>
+  </IllustratedText>
+  <LayoutConstraint>
+      <p>
+        Bei einer Enteignung müssten die Großkonzerne durch das Land Berlin entschädigt werden. Damit weder Steuerzahler*innen noch die Mieter*innen für Spekulationspreise aufkommen, muss die <strong>Entschädigungssumme unterhalb des Marktpreises</strong> liegen. Eine Vergesellschaftung nach Artikel 15 des Grundgesetzes muss die Interessen der Allgemeinheit und der zu enteignenden Eigentümer gegeneinander abwägen.
+      </p>
+      <p>
+        Da dieser Artikel bislang nicht angewendet wurde, ist der politische Entscheidungsspielraum groß. Eine Mehrheit der Verfassungsrechtler*innen bestätigt, dass eine Enteignung unter Marktwert möglich ist. Damit könnte ein Entschädigungskredit durch Einnahmen aus leistbaren Mieten refinanziert werden. Nach Schätzungen der Initiative „Deutsche Wohnen &amp; Co. enteignen!“ beläuft sich die <strong>angemessene Entschädigungssumme auf 8,3 Milliarden Euro</strong>.
+      </p>
+      <p>
+        Diese Entschädigungssumme orientiert sich an der Leistbarkeit des Wohnraums für die Mieter*innen. <strong>Auch Menschen an der Armutsgrenze sollen nicht mehr als 30&nbsp;% ihres Einkommens für die Miete aufwenden müssen – die für sie leistbare Nettokaltmiete wäre 3,70&nbsp;€/m²</strong>.
+      </p>
+      <Plot3_3_4 source="/visualization-data/3.3.4_nettokaltmiete_szenariovergleich.csv" title="Deckeln ist gut, Enteignen ist besser" subtitle="Durchschnittliche Nettokaltmieten bei Angeboten der zu enteignenden Konzerne nach Szenario.">
+        <p>
+          Grundlage zur Berechnung der durchschnittlichen Nettokaltmiete bei Angeboten der zu enteignenden Konzerne waren über 12&nbsp;200 Inserate. Hierbei lagen Angebote der Deutsche Wohnen, Vonovia, ADO, Akelius, Covivio, Grand City Property und BGP vor. Wohnungsinserate anderer Anbieter, die möglicherweise enteignet werden sollen, lagen uns nicht vor. Die Durchschnitte wurden hier als arithmetisches Mittel berechnet.
+        </p>
+      </Plot3_3_4>
+      <p>
+        Für die angebotenen Wohnungen der Unternehmen, welche die Initiative „Deutsche Wohnen &amp; Co. enteignen!“ vergesellschaften möchte, haben wir die <strong>durchschnittliche Nettokaltmiete ermittelt: 10,70&nbsp;€/m²</strong>. Die <strong>Einführung des Mietendeckels würde die Miete hier auf durchschnittlich 6,38&nbsp;€/m² senken, eine Vergesellschaftung</strong> nach leistbarer Entschädigungssumme <strong>auf sogar nur 3,70&nbsp;€/m²</strong>. Zur Einordnung: Selbst letzterer Wert liegt noch <strong>deutlich über der durchschnittlichen kostendeckenden Miete</strong>, die für Bau, reine Bewirtschaftung und Verwaltung dieser Wohnungsbestände nötig wäre: <strong>2,82&nbsp;€/m²</strong>.
+      </p>
+  </LayoutConstraint>
+  <ChapterNavigation current="3" />
+</Page>

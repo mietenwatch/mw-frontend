@@ -1,0 +1,103 @@
+@import "../../styles/helpers.scss";
+
+.homeChapter {
+  padding: 0;
+  margin: 0;
+  @include tablet-landscape {
+    display: flex;
+    min-height: 100vh;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  &:nth-child(1) {
+    background-color: $c-leist-bg;
+    color: $c-leist-p;
+    & h2 {
+      color:$c-leist-h1;
+    }
+    & a {
+      color:$c-leist-p;
+      border-color:$c-leist-h2;
+      &:hover {
+        color:white;
+        border-color:white;
+      }
+    }
+  }
+  &:nth-child(2) {
+    background-color: $c-beton-bg;
+    color: $c-beton-p;
+    & h2 {
+      color:$c-beton-h1;
+    }
+  }
+  &:nth-child(3) {
+    background-color: $c-utopie-bg;
+    color: $c-utopie-p;
+    & h2 {
+      color:$c-utopie-h1;
+    }
+  }
+  &:nth-child(2n + 1) {
+    flex-direction: row-reverse;
+  }
+  &__textContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 4rem 1.25rem;
+    @include tablet {
+      padding: 3rem 2rem;
+    }
+    @include tablet-landscape {
+      flex-basis: 50%;
+    }
+  }
+  &__title {
+    font-size: 3rem;
+    @include tablet { font-size: 4rem; }
+    @include tablet-landscape { font-size: 3rem; }
+    @include desktop { font-size: 4rem; }
+    color: #fff;
+  }
+  &__text {
+    font-family: $ff-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    max-width:30rem;
+    margin:1.5rem auto;
+  }
+  &__image {
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin: 0;
+    @include tablet-landscape {
+      flex-basis: 50%;
+    }
+  }
+  &__button {
+    border-width: 3px;
+    border-style:solid;
+    display: inline-block;
+    font-family: $ff-sans;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 1rem auto !important;
+    padding: 1.25rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+      color: #fff;
+      background-color: rgba(0,0,0,.2);
+      text-decoration: none;
+    }
+  }
+}

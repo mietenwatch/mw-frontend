@@ -1,0 +1,36 @@
+@import "../../styles/helpers.scss";
+
+.mapContainer {
+  text-align: center;
+  position: relative;
+}
+
+.buttonsWrapper {
+  margin-bottom: 2rem;
+}
+
+.attributeButtonContainer {
+  display: inline-block;
+  margin-bottom: 1rem;
+
+  .attributeButton {
+    font-family: $ff-sans;
+    font-weight:600;
+    display: inline-block;
+    font-size:.8rem;
+    margin:0 .8rem;
+    padding: .5rem;
+    cursor: pointer;
+    background:rgba(0,0,0,.05);
+
+    &.active {
+      color: white;
+      background:rgba(0,0,0,.1);
+    }
+  }
+
+  .sign {
+    font-weight: 700;
+    display: inline-block;
+  }
+}

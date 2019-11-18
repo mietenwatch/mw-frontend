@@ -1,0 +1,18 @@
+[build.environment]
+  NODE_OPTIONS = "--max_old_space_size=4096"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://mwapi.mietenwatch.de/:splat"
+  status = 200
+  force = true
+
+  [redirects.headers]
+    X-From = "Netlify"
+
+[[headers]]
+  for = "/embed/*"
+
+    [headers.values]
+      Access-Control-Allow-Origin = "*"
+      X-Frame-Options = "ALLOWALL"

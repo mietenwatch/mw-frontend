@@ -1,0 +1,37 @@
+@import '../../styles/helpers';
+
+.accordion {
+    &__item {
+        margin: 1rem;
+    }
+    &__heading {
+        color: #fff;
+        opacity:.9;
+        font-size: 1.2rem;
+        white-space: normal; 
+        display:list-item;
+        font-style:italic;
+        &::marker {
+            opacity:.1;
+            font-size:.9rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+        &:focus {
+            outline: 0;
+        }
+    }
+    &__panel {
+        font-size:.9rem;
+        animation: fadein 0.35s ease-in;
+        & p {
+            margin-top:.5rem;
+        }
+    }
+}
+@keyframes fadein {
+    from { opacity: .5; }
+    to { opacity: 1; }
+}

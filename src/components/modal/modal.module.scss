@@ -1,0 +1,49 @@
+.modal {
+  & a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+  &Link {
+    color: currentColor;
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-style: dotted;
+    margin-right: 0.1rem;
+    background: transparent !important;
+    border: none;
+    padding: 0;
+    text-align: left;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+
+  &ClosingX {
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
+    text-align: right;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.infoIcon {
+  height: 0.65rem;
+  margin-right: 0.15rem;
+  opacity: 0.6;
+  position: relative;
+  top: -0.05rem;
+  vertical-align: middle;
+  width: 0.65rem;
+}

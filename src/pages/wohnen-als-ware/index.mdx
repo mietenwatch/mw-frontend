@@ -1,0 +1,232 @@
+import LayoutConstraint from "../../components/layout-constraint";
+import Image from "../../components/layout/image";
+import Page from "../../components/layout/page";
+import IllustratedText from "../../components/illustratedText";
+import CompanyMap from "../../components/company-map";
+import RentIndexMap from "../../components/rentIndexMap";
+import ChapterNavigation from "../../components/chapterNavigation";
+import Scrollspy from "react-scrollspy";
+import Modal from "../../components/modal"
+import BerlinMap from "../../components/berlin-map"
+import DataTable2_5_4 from "../../components/dataTable";
+import Link from "gatsby-link";
+import Plot2_2_2 from '../../components/plot/2_2_2';
+import Plot2_2_7 from '../../components/plot/2_2_7';
+import Plot2_3_2 from '../../components/plot/2_3_2';
+import Plot2_3_6 from '../../components/plot/2_3_6_all';
+import Plot2_4_2 from '../../components/plot/2_4_2';
+import Plot2_5_2 from '../../components/plot/2_5_2';
+import Plot2_6_2_2 from '../../components/plot/2_6_2_2';
+import Plot2_6_3_2 from '../../components/plot/2_6_3_2';
+import Plot2_6_3_3 from '../../components/plot/2_6_3_3';
+
+<Scrollspy
+  items={["wohnen-als-ware", "berlins-big-players", "big-players-am-markt", "uberschussmiete", "was-hilft", "bauen,-bauen,-bauen?"]}
+  className="scrollspyContainer"
+  currentClassName="is-current"
+>
+  <li>
+    <a href="#wohnen-als-ware">Wohnen als Ware</a>
+  </li>
+  <li>
+    <a href="#berlins-big-players">Berlins Big Players</a>
+  </li>
+  <li>
+    <a href="#big-players-am-markt">Big Players am Markt</a>
+  </li>
+  <li>
+    <a href="#uberschussmiete">Überschussmiete</a>
+  </li>
+  <li>
+    <a href="#was-hilft">Was hilft?</a>
+  </li>
+  <li>
+    <a href="#bauen,-bauen,-bauen?">Bauen, bauen, bauen?</a>
+  </li>
+</Scrollspy>
+
+<Page className="page--wohnenalsware">
+  <IllustratedText imgSrc="wohnen-als-ware_3bg.png" textLeft id="wohnen-als-ware" className="img-monopoly">
+    <h1><em>Handeln mit</em> Wohn&shy;raum</h1>
+    <p>
+      Wenn Wohnraum als Ware gehandelt wird, können Vermieter*innen aus dem Grundbedürfnis Wohnen Profit schlagen, während Mieter*innen sich ihres Zuhauses nie sicher sein können. <a target="_blank" rel="noopener noreferrer" href="https://www.jll.de/de/presse/starker-anstieg-von-wohninvestment-volumina-in-europa">In keiner europäischen Stadt fließen so viele Investitionen</a> in den Wohnungsmarkt wie in Berlin – wobei viel mehr in den Kauf von Bestandsimmobilien als in den Neubau investiert wird. <strong>Um den Profit der Investor*innen sicherzustellen, müssen die Mieten zwangsläufig immer weiter steigen</strong>. Wer sind die größten Akteure auf dem Berliner Mietmarkt und <strong>wie handeln sie mit Wohnraum</strong>?
+    </p>
+  </IllustratedText>
+  <LayoutConstraint id="berlins-big-players">
+    <h2>Wer sind die <em>Big Players</em>?</h2>
+    <p>
+      Im Gegensatz zu vielen anderen Städten kontrollieren in Berlin wenige Wohnungsunternehmen einen bedeutenden Teil des Mietwohnungsmarkts und beeinflussen damit auch die Preisbildung am Markt. Wir haben die <strong>zehn Anbieter mit den meisten Online-Angeboten in Berlin</strong> identifiziert – die Big Players. Neben den privatwirtschaftlichen, profitorientierten Konzernen finden sich darunter auch städtische Wohnungsbaugesellschaften. Zusammen besitzen sie <strong>mindestens 27&nbsp;% des Mietwohnungsbestands</strong> in Berlin und stellten <strong>knapp 28&nbsp;% der untersuchten Angebote</strong> in der Stadt.
+    </p>
+    <p>
+      Von April 2018 bis Oktober 2019 verteilten sich ihre jeweilige Anteile an den Wohnungsinseraten folgendermaßen:
+    </p>
+    <Plot2_2_2 source="/visualization-data/2.2.2_marktanteile_bigplayers.csv" title="Deutsche Wohnen und städtische Anbieter – die Schwergewichte am Angebotsmarkt" subtitle="Marktanteile am Angebotsmarkt der Top 10-Anbieter." />
+    <h2><em>Wo liegen die Wohnungen</em> der Big Players?</h2>
+  </LayoutConstraint>
+  <CompanyMap />
+  <LayoutConstraint>
+    <p>
+      <strong>Die Karte liefert einen Einblick in die Lage der Wohnungsbestände der einzelnen Anbietern</strong>. Bei den Wohnungen der Deutsche Wohnen handelt es sich vor allem um Großsiedlungen am Berliner Stadtrand. Akelius konzentriert seine Aktivitäten auf Gründerzeitgebäude innerhalb des S-Bahn-Rings.
+    </p>
+    <p>
+      <strong>Auch die Baujahre der Wohnungen unterscheiden sich die Angebote der Big Players erheblich</strong>. So ist der Anteil von Neubauwohnungen bei den städtischen Wohnungsbaugesellschaften Degewo und Stadt und Land im Vergleich zu den privaten Anbietern hoch. Die Deutsche Wohnen bietet beispielsweise gar keine Wohnungen in Neubauten (Baujahr nach 2000) an.
+    </p>
+    <Plot2_2_7 source="/visualization-data/2.2.7_gebaeudealtersverteilung_bigplayers.csv" title="Altbau bei Akelius, Nachkriegsbau bei Deutsche Wohnen" subtitle="Verteilung der Baujahre angebotener Wohnungen, Anteile je Anbieter." />
+    <h1 id="big-players-am-markt"><em>Wie teuer vermieten</em> die Big Players?</h1>
+    <p>
+      Unsere Daten belegen eindrücklich: die Mietpreise in Berlin sind außer Kontrolle geraten. Günstiger Wohnraum (weniger als 7&nbsp;€/m² nettokalt) wird nur von <strong>städtischen Anbietern</strong> inseriert. <strong>Private Anbietern</strong> vermieten kaum Wohnungen unter 10&nbsp;€/m² nettokalt. Knapp drei Viertel der Angebote von <strong>Akelius</strong> werden zu mehr als 15&nbsp;€/m² nettokalt angeboten.
+    </p>
+    <Plot2_3_2 source="/visualization-data/2.3.2_miete_kategorien_bigplayers.csv" title="Günstige Angebote nur bei den Städtischen" subtitle="Verteilung der Wohnungsangebote nach Preiskategorien und Anbietern." />
+    <p>
+      Die Nettokaltmiete ist für Vermieter*innen die Haupteinnahmequelle, jedoch für große Anbieter nicht der einzige Weg, um die Profite zu maximieren.
+    </p>
+    <p>
+      Einige Großkonzerne, wie etwa Vonovia und Deutsche Wohnen, <strong>vergeben Aufträge für Verwaltung und Dienstleistungen an Tochtergesellschaften</strong>. <a target="_blank" rel="noopener noreferrer" href="https://www.neues-deutschland.de/artikel/1110313.nebenkostenabrechnung-fehler-mit-system.html">Diese rechnen zum Teil überteuerte Dienstleistungen als Nebenkosten ab</a>, so dass die Profite wieder in die Kassen des Konzerns fließen. So verlangt beispielsweise die Deutsche Wohnen die zweit höchsten Nebenkosten (Betriebs- und Heizkosten): <strong>durchschnittlich 3,98&nbsp;€/m²</strong>.
+    </p>
+    <p>
+      Auch das <a target="_blank" rel="noopener noreferrer" href="https://www.berliner-zeitung.de/politik/zulasten-der-mieter-so-funktioniert-das-geschaeftsmodell-der-deutsche-wohnen-32067760">systematische Sparen bei nötigen Instandhaltungsmaßnahmen</a> ermöglicht es den Anbietern, Profite zu schlagen, indem sie ihre Ausgaben senken – <strong>auf Kosten der Lebensqualität und Sicherheit der Mieter*innen</strong>.
+    </p>
+    <h2>Mieten der Big Players im Kontext</h2>
+    <p>
+      Setzt man die Nettokaltmieten und Nebenkosten (Betriebs- und Heizkosten) der <strong>Big Players</strong> in den Kontext des gesamten Mietmarkts, so ergeben sich weitere <strong>Einblicke in ihre <a href="https://www.rosalux.de/fileadmin/rls_uploads/pdfs/Studien/Studien_3-19_Profitmaximierer.pdf" target="_blank" rel="noopener noreferrer">Geschäftsmodelle</a></strong>. In der folgenden Grafik sind Nettokaltmiete und Nebenkosten jedes einzelnen Angebots abgebildet. Jeder Punkt repräsentiert ein Wohnungsangebot – in blau die Angebote des ausgewählten Big Players, in braun die Angebote der restlichen Anbieter (exklusive der Big Players).
+    </p>
+    <p>
+      Demnach verlangen <strong>Deutsche Wohnen und Gewobag</strong> mit durchschnittlich 3,98&nbsp;€/m² bzw. 3,48&nbsp;€/m² <strong>mit die höchsten Nebenkosten am gesamten Mietmarkt</strong>. Außerdem werden bei einem erheblichen Anteil der Angebote von Akelius Nettokaltmieten von über 20&nbsp;€/m² verlangt.
+    </p>
+    <Plot2_3_6 source="/visualization-data/2.3.6_miete_vs_nebenkosten_bigplayers.csv" title="Auffällig hohe Nebenkosten bei Deutsche Wohnen und Gewobag" subtitle="Nettokaltmiete und Nebenkosten nach Anbieter (blau) im Vergleich zum Rest des Mietmarkts (braun). Jeder Punkt repräsentiert ein Wohnungsangebot." />
+    <h1 id="was-treibt-den-preis?">Welche <em>Faktoren beeinflussen</em> den Mietpreis?</h1>
+    <p>
+      Um die Miethöhe der Big Players zu analysieren, wurde mit einem Verfahren des <a target="_blank" rel="noopener noreferrer" href="https://www.golem.de/news/random-forest-k-means-genetik-machine-learning-anhand-von-drei-algorithmen-erklaert-1810-136755.html">maschinellen Lernens</a> <strong>der Einfluss verschiedener Angebotsmerkmale auf die Nettokaltmiete pro Quadratmeter</strong> untersucht. Die Balken in der folgenden Grafik zeigen die relative Wichtigkeit bestimmter Angebotsmerkmale zur Erklärung der Nettokaltmiete pro Quadratmeter an. So überprüft das Modell beispielsweise, wie stark sich die Nettokaltmiete zweier exakt gleicher Wohnungen nur aufgrund verschiedener Anbieter unterscheidet.
+    </p>
+    <Plot2_4_2 source="/visualization-data/2.4.2_wichtigkeit_random_forest.csv" title="Was genau erklärt die Nettokaltmiete bei den Big Players?" subtitle="Wichtigkeit von Angebotsmerkmalen zur Erklärung der Nettokaltmiete pro m².">
+      <p>
+        Für die Bestimmung der relativen Wichtigkeit von Angebotsmerkmalen zur Erklärung der Nettokaltmiete pro m² haben wir ein Random Forest-Modell, ein Verfahren des maschinellen Lernens, angewandt. Die Modellgüte ist mit 95&nbsp;% erklärter Varianz sehr hoch.
+      </p>
+    </Plot2_4_2>
+    <p>
+      Unser Modell zeigt: Der <strong>Anbieter und die Lage</strong> (ob innerhalb oder außerhalb des S-Bahn-Rings oder Bezirk) sind die <strong>besten Indikatoren zur Vorhersage der Nettokaltmiete pro Quadratmeter</strong>. Allein der Fakt, dass eine Wohnung von einem bestimmten Anbieter angeboten wird und nicht von einem anderen, beeinflusst die Nettokaltmiete pro Quadratmeter wie kein anderes Angebotsmerkmal.
+    </p>
+    <p>
+      Ebenso beim Baujahr: Unterscheiden sich <strong>zwei sonst identisch ausgestattete und gelegene Wohnungen</strong> nur hinsichlichtlich ihres Baujahrs, führt dies zu einer erheblich unterschiedlichen Nettokaltmiete pro Quadratmeter.
+    </p>
+  </LayoutConstraint>
+  <IllustratedText id="uberschussmiete" imgSrc="wohnen-als-ware_2bg.png" bgColor="yellow">
+    <h1>Wie groß sind die <em>Gewinne</em>?</h1>
+    <p>
+      Dass Mietpreise unaufhaltsam in die Höhe schießen und Mieter*innen immer mehr unter Druck stehen, ist kein Naturgesetz. <strong>Mietpreise könnten tatsächlich viel niedriger sein, wenn Wohnungen profitfrei</strong> – also ohne Gewinne für Kreditgeber*innen oder Eigentümer*innen – <strong>gebaut und bewirtschaftet würden</strong>.
+    </p>
+  </IllustratedText>
+  <LayoutConstraint>
+    <p>
+      Mit dem Konzept einer <Modal modalLink="<strong>„kostendeckenden Miete“</strong>" modalTitle="Kostendeckende Miete">
+        <p>
+          Wir berechnen die <strong>kostendeckende Miete als Summe von Abschreibungen der geschätzten Baukosten</strong> (mit Aufschlägen für hochwertige Innenaustattung, besonders gute Dämmung etc.), <strong>Verwaltungskosten der Wohnung</strong> (und eines etwaigen Parkplatzes) und <strong>Instandhaltungskosten</strong>. Außerdem berücksichtigen wir ein <strong>Mietausfallwagnis</strong>.
+        </p>
+        <p>
+          <strong>Details zur Berechnung</strong>
+        </p>
+        <p>
+          Die generellen Baukosten werden auf Grundlage der Zahlen der <a target="_blank" rel="noopener noreferrer" href="http://www.bv-bauwirtschaft.de/zdb-cms.nsf/res/BaukostenI.pdf/$file/BaukostenI.pdf">Bundesvereinigung Bauwirtschaft</a> berechnet. Diese generellen Baukosten werden jährlich bis zu einem Restwert von 30&nbsp;% jährlich zu einem Satz von 1,25&nbsp;% pro Jahr linear abgeschrieben. Dieser Abschreibungssatz entspricht dem aktuellen <a target="_blank" rel="noopener noreferrer" href="https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/19_Legislaturperiode/Gesetze_Verordnungen/Grundsteuer-Reformgesetz-GrStRG/1-Referentenentwurf.pdf?__blob=publicationFile&v=3">Gesetzesentwurf zur „Reform des Grundsteuer- und Bewertungsrechtes“ (§&nbsp;253 Anhang 37)</a>, in dem eine Abschreibungsdauer von 80 Jahren für Mehrfamilienhäuser vorgesehen ist. Die Verwaltungs- und Instandhaltungskosten werden nach der <a target="_blank" rel="noopener noreferrer" href="https://www.haufe.de/immobilien/verwaltung/erhoehung-der-kostenmiete-bei-sozialwohnungen_258_392374.html">offiziellen Kostenmietenberechnung</a> für öffentlich geförderten Wohnraum gültig (ab 01.01.2017) berechnet: Verwaltungskostenpauschale 2016 und 2017 gemäß §&nbsp;26 II. BV (pro Jahr), Instandhaltungskosten gemäß §&nbsp;28 II. BV (pro Quadratmeter Wohnfläche und Jahr). Als Mietausfallwagnis werden nach <a target="_blank" rel="noopener noreferrer" href="https://www.gesetze-im-internet.de/bvo_2/BJNR017190957.html">§&nbsp;29 der Zweiten Berechnungsverordnung (II. BV)</a> 2&nbsp;% der Miete veranschlagt.
+        </p>
+        <p>
+          Für hochwertige Wohnungen (die z.&nbsp;B. aufwendig saniert wurden) wurden Extra-Baukosten veranschlagt, die zu einem linearen jährlichen Satz von 5&nbsp;% abgeschrieben werden:
+        </p>
+        <ul>
+          <li>Für Einbauküchen werden Extra-Baukosten in Höhe von 10&nbsp;000&nbsp;€ angenommen.</li>
+          <li>Für Möblierung von Wohnungen werden Extra-Baukosten in Höhe von 10&nbsp;000&nbsp;€ angenommen.</li>
+          <li>Für eine „anspruchsvolle“ Innenausstattung werden Extra-Baukosten in Höhe von 5&nbsp;000&nbsp;€ angenommen.</li>
+          <li>Für eine „luxuriöse“ Innenausstattung werden Extra-Baukosten in Höhe von 10&nbsp;000&nbsp;€ angenommen.</li>
+        </ul>
+        <p>
+          Für den Bau von Parkplätzen wurden 100&nbsp;€/m² veranschlagt. Das entspricht etwa einem Drittel der Bundesvereinigung Bauwirtschaft veranschlagten Kosten für einen Tiefgaragenplatz (292&nbsp;€/m²). In Berlin gibt es kaum Tiefgaragenplätze, deshalb nehmen wir bei Vorhandensein eines Autostellplatzes an, es handle sich um einen normalen Parkplatz.
+        </p>
+        <p>
+          Für besonders gut isolierte Wohnungen werden zusätzliche Baukosten für Dämmung angenommen. Die Baukosten der Dämmung werden komplett über 30 Jahre abgeschrieben (≙ Abschreibungssatz linear jährlich 3,3&nbsp;%). Hierfür veranschlagen wir 100&nbsp;€/m² für gut isolierte Wohnungen (Energieverbrauchswert zwischen 25 und 75&nbsp;kWh/m²a ≙ Kategorie A oder B) und 200&nbsp;€/m² für sehr gut isolierte Wohnungen (Energieverbrauchswert unter 25&nbsp;kWh/m²a ≙ Kategorie A+).
+        </p>
+        <p>
+          Die Grundsteuer ist Teil der Betriebskosten. Sie muss deshalb bei der Berechnung der kostendeckenden Nettokaltmiete nicht berücksichtigt werden.
+        </p>
+        <p>
+          Kosten für Grund und Boden werden ebenfalls nicht berücksichtigt, da für das Grundstück keine laufenden Kosten entstehen. Die Grundrente ist Teil der Ertragsverteilung und kein Gebrauchswert an sich. Die Grundrente wird nur auf Grundlage eine Eigentumstitels erwirtschaftet, nicht aufgrund der (Ab-)nutzung eines geschaffenen Gegenwerts.</p>
+        <p>
+          Die hier geschätzten Überschussmieten sind ein theoretisches Konstrukt und entsprechen nicht den betriebswirtschaftlich ausgewiesenen Überschüssen.
+        </p>
+      </Modal> haben wir geschätzt, <strong>welche Nettokaltmiete zur profitfreien Bewirtschaftung von Wohnraum nötig wäre</strong>. Die „kostendeckende Miete“ allein wäre ausreichend, um langfristig die Bau-, Bewirtschaftungs- und Verwaltungskosten von Mietwohnungen abzudecken. Die <strong>Differenz zwischen der tatsächlichen Nettokaltmiete und der „kostendeckenden Miete“ nennen wir „Überschussmiete“</strong>. Die „Überschussmiete“ fließt als Zinsen an die Kreditgeber*innen und als Rendite an Eigentümer*innen. Sie ist für Bau oder Bewirtschaftung von Wohnraums nicht notwendig.
+    </p>
+    <Plot2_5_2 source="/visualization-data/2.5.2_NKM_KostendeckMiete_SurplusMiete_Waterfall.csv" title="Fast drei Viertel der Miete sind zur Bewirtschaftung nicht notwendig" subtitle="Berlinweite durchschnittliche Nettokaltmiete, kostendeckende Miete und Überschussmiete pro m²" />
+    <p>
+      Natürlich nehmen Berlins Big Players ebenfalls erhebliche Überschussmieten ein. Aus den Überschussmieten speisen sich auch die <a target="_blank" rel="noopener noreferrer" href="https://www.handelsblatt.com/finanzen/immobilien/immobilienkonzern-deutsche-wohnen-erhoeht-mit-steigenden-mieten-den-gewinn/24338318.html?ticket=ST-12358747-kLYcpWeJY4nfMbGSllcf-ap2">sprudelnden Gewinne der privaten Immobilienkonzerne</a>. Bei den <strong>städtischen Wohnungsunternehmen fließen die Überschussmieten größtenteils in die Bedienung von Krediten</strong>. Der Rest wird teilweise als Gewinn einbehalten, teilweise fließt er als Steuern zurück an den Staat. Wir haben für die Big Players anhand der Ausstattungsmerkmale und des Alters der angebotenen Wohnungen getrennte Schätzungen ihrer durchschnittlichen kostendeckenden Miete und ihrer Überschussmiete durchgeführt. Das sind die <Modal modalLink="Ergebnisse">
+        <p>
+          Die hier geschätzten Überschussmieten sind ein theoretisches Konstrukt und entsprechen nicht den betriebswirtschaftlich ausgewiesenen Überschüssen. Die Ergebnisse sind Schätzungen – für eine lückenlose Historie von Modernisierungen und Sanierungen (z.&nbsp;B. teuren Asbestsanierungen) in der Wohnungen fehlen uns die Daten. In diese Berechnung gingen nur Angebote mit vollständigen Angaben zum Baujahr ein. Zur Berechnung der Durchschnitte wurde hier das arithmetische Mittel verwendet.
+        </p>
+      </Modal>:
+    </p>
+    <DataTable2_5_4 />
+  </LayoutConstraint>
+  <IllustratedText id="was-hilft" imgSrc="wohnen-als-ware_4bg.png">
+    <h1>Was wird <em>dagegen getan</em>?</h1>
+    <p>
+      Um die Wohnungskrise und den Mietenwahnsinn einzudämmen, wurden in den vergangenen Jahren einige <strong>mietpolitische Maßnahmen</strong> eingeführt. Die Wirkungen dieser Maßnahmen sind jedoch sehr begrenzt. <strong>Durch zahlreiche Schlupflöcher und Ausnahmen können sie von Vermieter*innen umgangen werden</strong>. Im Folgenden betrachten wir die <em>Mietpreisbremse</em> und den ihr zugrunde liegenden <em>Mietspiegel</em>.
+    </p>
+  </IllustratedText>
+  <LayoutConstraint>
+    <h2>Der Mietspiegel? <em>Wird weit überschritten.</em></h2>
+      <p>
+        Der <a target="_blank" rel="noopener noreferrer" href="https://www.stadtentwicklung.berlin.de/wohnen/mietspiegel/index.shtml">Mietspiegel</a> ist ein Instrument <strong>zur Ermittlung der ortsüblichen Vergleichsmiete für eine Wohnung</strong>. In die Berechnung fließen zahlreiche Faktoren ein: Wohnlage, Ausstattung, Baujahr und Wohnungsgröße. Da nur Mietpreise von Neuvermietungen oder Mietänderungen der letzten vier Jahre, aber keine ältere Bestandsmieten oder Mieten aus Sozialwohnungsbau in die Berechnungsgrundlage eingehen, <strong>steigt der Mietspiegel als Richtwert zusammen mit den steigenden Mietpreisen</strong>.
+      </p>
+      <p>
+        Wir haben analysiert, wie sich die Mietangebote zwischen April 2018 und Oktober 2019 zu dem jeweils geltenden Mietspiegel (2017 oder 2019) verhalten. <strong>Im Schnitt
+        <Modal modalLink="&nbsp;<strong>überschritten die Angebote</strong>&nbsp;">
+          <p>
+            Alle Berechnungen zum Mietspiegel basieren auf der konservativen Annahme, dass bei keinem Wohungsangebot die wohnwertmindernden Merkmale in der Berechnung des Mietspiegels überwiegen. Angeboten, die als „luxuriös“ oder „modernisiert“ inseriert wurden, wurde die obere Grenze des jeweiligen Mietspiegefelds zugeordnet. 
+          </p>
+          <p>
+            Für jedes Angebot errechnen wir die Überschreitung als Differenz aus Nettokaltmiete und dem inidividuell zugeordneten Mietspiegelwerts. Zur Berechnung des Durchschnitts pro Ortsteil wurde der Median verwendet.
+          </p>
+        </Modal>
+        den Mietspiegel um 3,39&nbsp;€/m² (entspricht 47&nbsp;%)</strong>. Bei Gebäuden, die bis 1918 gebaut wurden, war die Überschreitung des Mietspiegels mit <strong>fast 69&nbsp;% besonders hoch</strong>.
+      </p>
+      <p>
+        Die Überschreitung des Mietspiegels haben wir für die Ortsteile Berlins errechnet. Spitzenreiter sind die Ortsteile <strong>Tiergarten mit einer durchschnittlichen Überschreitung des Mietspiegels von 7,07&nbsp;€/m²</strong> (entspricht 79&nbsp;%) und <strong>Kreuzberg</strong> mit einer relativen <strong>Überschreitung des Mietspiegels von 92&nbsp;%</strong> (6,46&nbsp;€/m²).
+      </p>
+  </LayoutConstraint>
+  <RentIndexMap />
+  <LayoutConstraint>
+    <h2>Die Miet&shy;preis&shy;brem&shy;se? <em>Zieht nicht.</em></h2>
+    <p>
+      Die Mietpreisbremse ist ein seit 2015 bundesweit geltendes Gesetz, das die Maximalhöhe für Mietpreise in bestimmten Gegenden festlegt. Laut Mietpreisbremse dürfen Mieten <strong>bei Neuvermietungen nur 10&nbsp;% über der ortsüblichen Miete</strong> liegen. Doch die Wirksamkeit dieses Instruments wird durch <a target="_blank" rel="noopener noreferrer" href="https://www.tagesschau.de/faktenfinder/kurzerklaert/kurzerklaert-mietpreisbremse-101.html">zahlreiche Ausnahmen</a> stark abgeschwächt und die Beweislast liegt auf Seite der Mieter*innen.
+    </p>
+    <p>
+      Wir haben für jedes Angebot errechnet, ob der Mietpreis unter oder über der Grenzwerten der Mietpreisbremse lag. Dabei trafen wir die Annahme, dass die vorherige Miete die ortsübliche Vergleichsmiete nicht um mehr als 10&nbsp;% überschritten hatte. Das Ergebnis: <strong>87&nbsp;% aller Wohnungen</strong> wurden zu Mietpreisen angeboten, die <strong>über den Kappungsgrenzen der Mietpreisbremse liegen</strong>. Ob durch Missachtung der Regeln oder dank der Ausnahmen: Unsere Daten zeigen, dass die Mietpreisbremse in Berlin so gut wie keine Wirkung hat.
+    </p>
+    <Plot2_6_2_2 source="/visualization-data/2.6.2.2_anteil_angebote_ueber_mietpreisbremse_nach_bezirk.csv" title="Wirkungslose Mietpreisbremse" subtitle="Anteil der Angebote, der die Kappungsgrenzen der Mietpreisbremse über- oder unterschritt." />
+  </LayoutConstraint>
+  <LayoutConstraint id="bauen,-bauen,-bauen?">
+    <h2>Bauen, bauen, bauen? <em>Hilft nicht.</em></h2>
+    <p>
+      Gegen stärkere Eingriffe in den Mietmarkt wie einen Mietendeckel oder die Vergesellschaftung von Wohneigentum wird oft argumentiert, die Krise des Wohnmarkts ließe sich allein <a target="_blank" rel="noopener noreferrer" href="https://www.ihk-berlin.de/politische-positionen-und-statistiken_channel/stadtentwicklung1/wohnungsbau/4387654">durch mehr Neubau</a> lösen. <strong>Doch schafft Neubau tatsächlich leistbaren Wohnraum?</strong>
+    </p>
+    <p>
+      Laut unseren Daten werden <strong>Wohnungen, die zwischen 2010 und 2019 von privaten Anbietern gebaut wurden</strong>, für eine <strong>durchschnittliche Nettokaltmiete von circa 16&nbsp;€/m²</strong> angeboten – für die meisten Berliner*innen völlig unbezahlbar. Der Wert für die städtischen Anbieter lag hier bei vergleichsweise niedrigen – und dennoch für viele Berliner*innen unbezahlbaren 9,87&nbsp;€/m². Derzeit vergrößert offensichtlich Neubau durch private Unternehmen das Wohnraumangebot nur für finanzstarke Haushalte.
+    </p>
+    <Plot2_6_3_2 source="/visualization-data/2.6.3.2_lineplot_neubau.csv" title="Neubau privater Anbieter ist unbezahlbar" subtitle="Durchschnittliche Nettokaltmieten je Baujahrsdekade nach Anbieter in&nbsp;€/m²." />
+    <p>
+      Wohnen in der Innenstadt ist teuer. <strong>Am höchsten sind die Nettokaltmieten im Neubau – gefolgt von Altbauwohnungen der Jahrhundertwende</strong>. Werden die durchschnittlichen Nettokaltmieten nach Baujahrsdekade und Bezirk berechnet, so zeigt sich, dass in manchen innerstädtisch geprägten Bezirken selbst für die sonst eher günstigen Wohnungen aus der Nachkriegszeit mittlerweile etwa 13&nbsp;€/m² Nettokaltmiete verlangt werden.
+    </p>
+    <p>
+      Da auch im Altbau die Neuvermietungspreise über 12&nbsp;€/m² liegen, wird durch einen Umzug vom Alt- in den Neubau keine günstige Wohnung frei – vom berüchtigten <strong><a target="_blank" rel="noopener noreferrer" href="https://www.freitag.de/autoren/andrej-holm/die-falsche-bremse">„trickle-down“-Effekt</a> ist keine Spur</strong>.
+    </p>
+    <Plot2_6_3_3 source="/visualization-data/2.6.3.3_heatmap_neubau.csv" title="Bezahlbarer Neubau höchstens am Stadtrand" subtitle="Durchschnittliche Nettokaltmiete je Baujahrsdekade nach Bezirken in&nbsp;€/m².">
+      <p>
+        Lücken in der Grafik verweisen auf eine unzureichende Datenlage (unter 100 Angebote). Zur Berechnung der Durchschnitte wurde hier der Median verwendet.
+      </p>
+    </Plot2_6_3_3>
+    <p>
+      Der Handel mit Wohnraum ist lukrativ, doch die Gewinne der Immobilienwirtschaft gehen zu Lasten der Mieter*innen. Dabei orientieren sich die Preise nicht an den Kosten für den Bau oder Instandhaltung des Wohnraums. Vielmehr handelt es sich um <strong>Spekulationspreise, die Berlin in den letzten Jahren in eine Wohnungskrise getrieben haben</strong>. Mit der Mietpreisebremse wurde versucht, die Mietpreisentwicklung zu dämpfen. Offensichtlich mit nur sehr geringem Erfolg – der überwältigende Teil der von uns untersuchten Angebote wurde zu Preisen oberhalb der Mietpreisbremse angeboten. Neubau scheint die Wohnungsnot bislang kaum zu lindern. Die Preise sind für Normalverdiener*innen schlicht zu hoch.
+    </p>
+    <p>
+      Wo wirksame politische Maßnahmen ausbleiben, formiert sich <strong>Widerstand seitens der Mieter*innen</strong>. Sie kämpfen um bezahlbaren Wohnraum in der Stadt. Der daraus erwachsene Druck und die akute Handlungsnotwendigkeit haben in den letzten Jahren auch politisch den Raum für denkbare Regulierungen erweitert: Mietendeckel, Rekommunalisierung von Immobilien oder Vergesellschaftung. Diese <strong>Antworten auf die Wohnungskrise und ihre Wirkungen betrachten wir im <Link to="/antworten">folgenden Kapitel</Link></strong>.
+    </p>
+  </LayoutConstraint>
+  <ChapterNavigation current="2" />
+</Page>

@@ -1,0 +1,45 @@
+@import "../../styles/helpers.scss";
+
+.footer {
+  background: #252d33;
+  color: #b8c0c4;
+  text-align: center;
+  font-size: .8rem;
+  padding: 2rem;
+  &__heading {
+    color:white;
+    font-family:$ff-sans;
+    font-weight:600;
+    font-size:1.25rem;
+  }
+  &__logos {
+    list-style-type: none;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    background: #fff;
+    padding: 2rem;
+    & li {
+      width: 10rem;
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  &__logo {
+    margin-bottom: 2rem;
+    & img {
+      display: block;
+      width: 2.2rem;
+      height: auto;
+      margin: 0 auto;
+      & p {
+        margin-top: 0.75rem;
+        text-align: center;
+      }
+    }
+  }
+  a:hover {
+    text-decoration:none;
+    color:white;
+  }
+}

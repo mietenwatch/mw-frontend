@@ -1,0 +1,388 @@
+@import "helpers.scss";
+@import "images.scss";
+@import "tooltip.scss";
+@import "modal.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+
+  @include tablet {
+    font-size: 16px;
+  }
+
+  @include tablet-landscape {
+    font-size: 17px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+  }
+
+  @include desktop-hd {
+    font-size: 19px;
+  }
+}
+
+body {
+  color: #333;
+  font-family: $ff-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $ff-sans;
+  line-height: 1.15;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+h1 em,
+h2 em,
+h3 em {
+  color: white;
+  font-style: normal;
+}
+
+select {
+  font-family: $ff-sans;
+  font-size: 0.9rem;
+  height: 2rem;
+  width: 100%;
+  background: #e0c254;
+  border: 2px #fff solid;
+  @include tablet {
+    margin-left: 4rem;
+    width: calc(100% - 4rem);
+  }
+}
+
+.conclusion {
+  display: inline-block;
+  max-width: 36rem;
+  margin: 1.5rem auto 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  font-style: italic;
+  font-family: $ff-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.data-table {
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.data-table p {
+  margin: 0;
+  padding: 1rem;
+  text-align: left;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0;
+  border-bottom: 1px solid $c-leist-h1;
+}
+
+.data-table th,
+.data-table tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.leaflet-container {
+  background: none !important;
+  font-family: $ff-sans !important;
+  .leaflet-control-attribution {
+    display: none;
+  }
+}
+
+.mapDistrictLabel {
+  color: white;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.mapConclusion {
+  display: inline-block;
+  max-width: 40rem;
+  margin: 1rem auto 0;
+  padding: 0.75rem;
+  font-family: $ff-sans;
+  font-size: 0.8rem;
+  font-weight: normal;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+p {
+  margin: 1.6rem 0;
+  line-height: 1.6;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// page colors
+
+.page {
+  &--home {
+    padding-top: 3rem;
+    background-color: $c-home-bg;
+    color: $c-home-p;
+    & h1 {
+      color: $c-home-h1;
+      margin-bottom: 4rem;
+      & h {
+        color: $c-grey;
+      }
+    }
+    & h2,
+    & h3 {
+      color: $c-home-h2;
+    }
+  }
+  &--leistbarkeit {
+    padding-top: 3rem;
+    background-color: $c-leist-bg;
+    color: $c-leist-p;
+    & h1 {
+      color: $c-leist-h1;
+      & h {
+        color: $c-grey;
+      }
+    }
+    & h2,
+    & h3 {
+      color: $c-leist-h2;
+    }
+    & .ygrid.crisp,
+    & .xzl.zl.crisp {
+      stroke: #eb9ac1 !important;
+    }
+    & .ytick text,
+    & .xtick text {
+      fill: rgb(115, 37, 75) !important;
+    }
+    & .xtick text[data-unformatted="Berlin"] {
+      fill: #fff !important;
+    }
+    & .rc-slider-handle,
+    & .rc-slider-handle:hover,
+    & .rc-slider-handle:active,
+    & .rc-slider-handle:focus {
+      border: solid 2px #f0c1d8;
+    }
+    & .rc-slider-rail {
+      background-color: #ae4176;
+    }
+    & .rc-slider-track {
+      background-color: #fff;
+    }
+  }
+  &--wohnenalsware {
+    padding-top: 3rem;
+    background-color: $c-beton-bg;
+    color: $c-beton-p;
+    & h1 {
+      color: $c-beton-h1;
+      & h {
+        color: $c-grey;
+      }
+    }
+    & h2,
+    & h3 {
+      color: $c-beton-h2;
+    }
+  }
+  &--antworten {
+    padding-top: 3rem;
+    background-color: $c-utopie-bg;
+    color: $c-utopie-p;
+    & h1 {
+      color: $c-utopie-h1;
+      & em {
+        color: #fff;
+        font-style: normal;
+      }
+      & h {
+        color: $c-grey;
+      }
+    }
+    & h2,
+    & h3 {
+      color: $c-utopie-h2;
+    }
+    & .rc-slider-handle,
+    & .rc-slider-handle:hover,
+    & .rc-slider-handle:active,
+    & .rc-slider-handle:focus {
+      border: solid 2px #a6e4e7;
+    }
+    & .rc-slider-rail {
+      background-color: #2d797d;
+    }
+    & .rc-slider-track {
+      background-color: #fff;
+    }
+  }
+}
+
+.textId {
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 !important;
+  padding: 0;
+  display: none;
+}
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 100000;
+}
+
+.ReactModal__Content {
+  border: none !important;
+  border-radius: 0 !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #666;
+  padding: 2rem !important;
+  max-height: 90vh;
+  max-width: 40rem;
+  margin: 0 auto;
+  overflow: auto;
+
+  & button {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    border: none;
+    background: #ececec;
+    text-align: center !important;
+    color: #666;
+    &:hover {
+      color: #333;
+    }
+  }
+
+  & h2 {
+    margin-top: 1rem;
+  }
+
+  & p,
+  & li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  & li {
+    margin-bottom: 0;
+  }
+
+  & ul,
+  & p {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+  }
+}
+
+.grayOutWrapper {
+  opacity: 0.3;
+  // background-color: #ccc;
+  pointer-events: none;
+}
+.labelcheckmark {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  line-height: 1.6;
+}
+
+.labelcheckmark input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: lighten($c-leist-h1, 10%);
+}
+
+.labelcheckmark:hover input ~ .checkmark {
+  background-color: lighten($c-leist-h1, 5%);
+}
+
+.labelcheckmark input:checked ~ .checkmark {
+  background-color: lighten($c-leist-h1, 40%);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.labelcheckmark input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.labelcheckmark .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}

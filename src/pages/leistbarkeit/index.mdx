@@ -1,0 +1,284 @@
+import { AffordabilityMapCustom, AffordabilityMapAverage, AffordabilityMapH4 } from "../../components/affordability-map/index";
+import GentrificationIndexMap from "../../components/choropleth-map-static/gentrificationIndex";
+import Image from "../../components/layout/image";
+import Page from "../../components/layout/page";
+import LayoutConstraint from "../../components/layout-constraint";
+import IllustratedText from "../../components/illustratedText";
+import ChapterNavigation from "../../components/chapterNavigation";
+import { bgColors } from "../../styles/variables";
+import Scrollspy from "react-scrollspy";
+import Modal from '../../components/modal';
+import Plot1_4_5 from '../../components/plot/1_4_5';
+import Plot1_4_8 from '../../components/plot/1_4_8';
+import Plot1_5_4 from '../../components/plot/1_5_4';
+import Plot1_5_7 from '../../components/plot/1_5_7';
+import Link from 'gatsby-link';
+
+<Scrollspy
+  items={[
+    "grundbedurfnis-wohnen",
+    "wo-wohnen",
+    "angebote-fur-dich",
+    "berlin-fur-alle",
+    "mit-hartz-iv-in-berlin",
+    "unter-verdrangungsdruck"
+  ]}
+  className="scrollspyContainer"
+  currentClassName="is-current"
+>
+  <li>
+    <a href="#grundbedurfnis-wohnen">Grundbedürfnis Wohnen</a>
+  </li>
+  <li>
+    <a href="#wo-wohnen">Wo wohnen?</a>
+  </li>
+  <li>
+    <a href="#angebote-fur-dich">Angebote für dich?</a>
+  </li>
+  <li>
+    <a href="#berlin-fur-alle">Berlin für alle?</a>
+  </li>
+  <li>
+    <a href="#mit-hartz-iv-in-berlin">Mit Hartz IV in Berlin</a>
+  </li>
+  <li>
+    <a href="#unter-verdrangungsdruck">Unter Verdrängungsdruck</a>
+  </li>
+</Scrollspy>
+<Page className="page--leistbarkeit">
+    <IllustratedText imgSrc="leistbarkeit_2bg.png" textLeft id="grundbedurfnis-wohnen">
+      <h1>Alle müssen <em>wohnen</em></h1>
+      <p>Wohnen ist ein Grundbedürfnis. Wer in Berlin zur Miete wohnt, muss in der Regel einen großen Teil des Einkommens für Miete aufwenden. Eine Wohnung gilt üblicherweise dann als <strong>„leistbar“</strong>, wenn die Gesamtmiete (<a target="_blank" rel="noopener noreferrer" href="https://www.boeckler.de/pdf/p_fofoe_WP_063_2018.pdf">inklusive aller Nebenkosten</a>) <strong>30&nbsp;% des Netto-Haushaltseinkommens nicht übersteigt</strong>. Gesamtmieten in dieser Höhe sind für Haushalte mit niedrigem Einkommen allerdings schon mit erheblichen Einsparungen in anderen Bereichen verbunden.</p>
+      <p>Etwa <strong>85&nbsp;% aller Berliner*innen wohnen zur Miete</strong> – der Mangel an leistbarem Wohnraum und die scheinbar unaufhaltsam steigenden Mietpreise sind hier längst zu einem gesamtgesellschaftlichen Problem geworden.</p>
+    </IllustratedText>
+    <LayoutConstraint id="wo-wohnen">
+      <h2>Aber <em>können</em> auch alle wohnen?</h2>
+      <p>
+        Während in Berlin rund <a target="_blank" rel="noopener noreferrer" href="https://www.boeckler.de/112132_113590.htm">310&nbsp;000 bezahlbare Wohnungen</a> fehlen, ist die Stadt beim <a target="_blank" rel="noopener noreferrer" href="https://www.tagesspiegel.de/berlin/global-residential-cities-index-berlins-immobilienpreise-wachsen-am-schnellsten-weltweit/21166902.html">Preisanstieg von Immobilien</a> Weltspitze. In Berlin haben Spekulation, Privatisierung und eine gestiegene Nachfrage nach Wohnraum mittlerweile zu einer „<strong>Wohnungskrise</strong>“ geführt: <strong>Immer mehr Menschen</strong>, auch aus der Mittelschicht, <strong>haben enorme Schwierigkeiten, leistbaren Wohnraum zu finden</strong>.
+      </p>
+      <p>
+        Zwischen April 2018 und Oktober 2019 haben wir den Angebotsmarkt für Mietwohnungen genau beobachtet. Dafür haben wir Daten von rund <strong>90&nbsp;000 Online-Wohnungsinseraten gesammelt und ausgewertet</strong>. Unsere Ergebnisse sind alarmierend.
+      </p>
+      <h2 id="angebote-fur-dich">Wo kannst <em>du</em> wohnen?</h2>
+      <p>
+        Nach Eingabe deines Haushaltsnettoeinkommens und der benötigten Zimmeranzahl <strong>zeigt dir die folgende Karte den Anteil der für dich leistbaren Wohnungen in verschiedenen Ortsteilen Berlins</strong>. 
+      </p>
+      <p>
+        Klicke auf einen Stadtteil, um die einzelnen Wohnungsangebote zu sehen. Alle für dich leistbaren Wohnungen werden als graue, alle nicht leistbaren als rote Punkte dargestellt. Mit der Checkbox kannst du Wohnungen, für deren Anmietung ein <strong>Wohnberechtigungsschein benötigt</strong> wird, berücksichtigen oder ausblenden.
+      </p>
+    </LayoutConstraint>
+    <AffordabilityMapCustom />
+    <IllustratedText id="berlin-fur-alle" imgSrc="leistbarkeit_4bg.png">
+      <h1>Berlin – <em>Stadt für alle?</em></h1>
+      <p>
+        Die Mieten in Berlin sind in den letzten Jahren derart stark gestiegen, dass selbst <strong>Haushalte mit durchschnittlichen Einkommen kaum mehr leistbare Wohnungen finden</strong>. Die durchschnittlichen Einkommen in Berlin sind laut den <a target="_blank" rel="noopener noreferrer" href="https://www.statistik-berlin-brandenburg.de/publikationen/stat_berichte/2017/SB_A01-11-00_2016j01_BE.pdf">Ergebnissen des Mikrozensus von 2016</a> folgende:
+      </p>
+    </IllustratedText>
+    <LayoutConstraint>
+      <table className="data-table">
+        <thead>
+          <tr>
+            <th>
+              <p>Haushaltsgröße</p>
+            </th>
+            <th>
+              <p>Nettoeinkommen in €</p>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <p>1 Person</p>
+            </td>
+            <td>
+              <p>1&nbsp;375</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>2 Personen</p>
+            </td>
+            <td>
+              <p>2&nbsp;625</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>3 Personen</p>
+            </td>
+            <td>
+              <p>3&nbsp;075</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>4 Personen</p>
+            </td>
+            <td>
+              <p>3&nbsp;425</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p>5 und mehr Personen&nbsp;</p>
+            </td>
+            <td>
+              <p>3&nbsp;000</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        In der folgenden Karte zeigen wir, wo sich Berliner Haushalte mit <strong>durchschnittlichem Einkommen Wohnungen leisten können</strong>. Klicke auf einen Stadtteil, um die einzelnen Wohnungsangebote zu sehen.
+        </p>
+    </LayoutConstraint>
+    <AffordabilityMapAverage />
+    <LayoutConstraint>
+      <p>
+        So sind für einen durchschnittlichen Berliner <strong>Single-Haushalt</strong> mit einem Netto-Haushaltseinkommen von <strong>1&nbsp;375 €</strong> berlinweit nur <strong>3,1&nbsp;% der Wohnungsangebote</strong> leistbar. Innerhalb des S-Bahn-Rings sind es sogar nur <strong>0,9&nbsp;%</strong> der Angebote. Auch für <strong>5- und mehr Personen-Haushalte mit Durchschnittseinkommen</strong> ist die Lage besonders angespannt: Unter den 780 in Frage kommenden Angeboten innerhalb des S-Bahn-Rings war zwischen April 2018 und Oktober 2019 <strong>kein einziges leistbares Angebot</strong> dabei.
+      </p>
+      <h2>So viel Wohnfläche können sich <em>Durchschnittshaushalte leisten</em></h2>
+      <p id="1.4.4">
+        <strong>Steigende Mieten</strong> müssen von Mieter*innen oft durch einen <strong>Verzicht auf Wohnfläche ausgeglichen</strong> werden. Die für einen Haushalt „leistbare“ Wohnfläche wird dadurch schlicht immer kleiner.
+      </p>
+      <Plot1_4_5 source="/visualization-data/1.4.5_leistbare_wohnflaeche_dottplot.csv" title="Zu viert auf 69 m² leben" subtitle="Wohnfläche, die sich ein Haushalt mit Durchschnittseinkommen leisten kann – nach Personenanzahl und Bezirk.">
+        <p>
+          Die leistbare Wohnfläche wurde folgendermaßen berechnet: Zunächst wurde der durchschnittliche Quadratmeterpreis der Gesamtmiete für alle in Frage kommenden Wohnungen ermittelt. Dann wurden die maximal leistbaren Mietausgaben (30&nbsp;% des Netto-Haushaltseinkommens) durch diesen Quadratmeterpreis geteilt – und ergaben die leistbare Wohnfläche.
+        </p>
+        <p>
+          <strong>Hinweis:</strong> Für manche Bezirke liegt eine zu geringe Anzahl an Wohnungsangeboten für 5 und mehr Personen vor. Deshalb fehlen an den entsprechenden Stellen in der Grafik die Datenpunkte.
+        </p>
+      </Plot1_4_5>
+      <p>
+        Besonders eng wird es für Single-Haushalte und Haushalte mit mehr als 4 Personen. Ein <strong>vierköpfiger Haushalt mit Durchschnittseinkommen</strong> kann sich bei Umzug aktuell in Berlin <strong>nur noch 69&nbsp;m² leisten</strong>. Auffallend ist, dass sich ein 5- und mehr Personen-Haushalt sogar noch weniger Wohnfläche leisten kann als ein 4-Personen-Haushalt. Grund hierfür ist, dass die durchschnittlichen Einkommen von Haushalten mit 5 und mehr Personen mit 3 000 € netto tatsächlich niedriger liegen als die von 3- oder 4-Personen-Haushalten.
+      </p>
+      <h2><em>Beispiel:</em> Single sucht Wohnung</h2>
+      <p>
+        Georgios sucht eine neue Ein- bis Zwei-Zimmer-Wohnung. Er lebt alleine und verfügt über ein monatliches Nettoeinkommen von 1&nbsp;375 € – liegt damit also <strong>genau im Berliner Durchschnitt</strong>. Er wohnt schon lange in Kreuzberg und würde gerne dort bleiben.
+      </p>
+      <Plot1_4_8 source="/visualization-data/1.4.9_1-pers_hh_barchart.csv" title="Für Singles ist Berlin nahezu unbezahlbar geworden" subtitle="Anteil leistbarer 1- bis 2-Zimmer-Wohnungen für einen durchschnittlichen 1-Personen-Haushalt.">
+        <p>
+          Ein 1-Personen-Haushalt in Berlin verdiente <a target="_blank" rel="noopener noreferrer" href="https://www.statistik-berlin-brandenburg.de/publikationen/stat_berichte/2017/SB_A01-11-00_2016j01_BE.pdf">2016 laut Mikrozensus</a> monatlich netto 1&nbsp;375 Euro. Als leistbar gelten hier alle 1- bis einschießlich 2-Zimmer-Wohnungen, wenn ihre Gesamtmiete unter 412,50 Euro (30&nbsp;% von 1&nbsp;375 Euro) liegt.
+        </p>
+      </Plot1_4_8>
+      <p>
+        Für Georgios ist es nahezu unmöglich, im Bezirk Friedrichshain-Kreuzberg eine bezahlbare Wohnung zu finden. Dort kommen <strong>nur 0,7&nbsp;% der 1- bis 2-Zimmer-Wohnungen in Frage</strong>. Auch in den angrenzenden Bezirken ist die Marktlage kaum besser. Einige wenige für ihn leistbare Angebote gibt es in Reinickendorf, Spandau, Lichtenberg oder Marzahn-Hellersdorf.
+      </p>
+    </LayoutConstraint>
+    <LayoutConstraint id="mit-hartz-iv-in-berlin">
+      <h1>Wo wohnen <em>mit Hartz IV?</em></h1>
+      <p>
+        In Berlin beziehen etwa <a target="_blank" rel="noopener noreferrer" href="https://www.morgenpost.de/berlin/article226547811/Hartz-IV-in-Berlin-Zahl-der-Empfaenger-sinkt-Auch-weniger-Aufstocker.html">260&nbsp;000 Menschen Arbeitslosengeld II (Hartz IV)</a>. Für diese Personen <strong>übernimmt das Jobcenter die Wohnkosten</strong> bis zu einem gewissen Betrag. Diese so genannten „<a target="_blank" rel="noopener noreferrer" href="https://www.berlin.de/jobcenter-tempelhof-schoeneberg/leistungsbereich/unterkunft-und-heizung/artikel.394407.php">Kosten der Unterkunft</a>“ unterliegen jedoch strengen Beschränkungen. Welche Kosten das Jobcenter übernimmt, richtet sich unter anderem nach der Größe des Haushalts.
+      </p>
+      <p>
+        Wir haben auf Grundlage der von Berliner Jobcenter gezahlten Kosten der Unterkunft für <Modal modalLink="jeden Stadtteil ermittelt">
+        <p>
+          Für ALG II beziehende Personen übernimmt das Jobcenter die Kosten der Unterkunft für Wohnungen entsprechend der Haushaltsgröße. Um zu bestimmen, welche Wohnungen für welche Haushaltsgröße in Frage kommen, verwenden wir folgenden Schlüssel:
+        </p>
+        <ul>
+          <li>1 Person: 1 bis einschlie&szlig;lich 2 Zimmer</li>
+          <li>2 Personen: 2 bis einschlie&szlig;lich 3 Zimmer</li>
+          <li>3 Personen: 3 bis einschlie&szlig;lich 4 Zimmer</li>
+          <li>4 Personen: 4 bis einschlie&szlig;lich 5 Zimmer</li>
+          <li>5 Personen: 5 bis einschlie&szlig;lich 6 Zimmer</li>
+        </ul>
+        <p>Als zulässige Gesamtaufwendungen für Kosten der Unterkunft und Heizung (≙ Kosten der Unterkunft) wurden <a target="_blank" rel="noopener noreferrer" href="https://www.beratung-kann-helfen.de/images/medien/pdf-Dateien/angemessene-kdu-berlin.pdf">folgende Beträge</a> verwendet:</p>
+        <ul>
+          <li>1 Person: 472 €</li>
+          <li>2 Personen: 553 €</li>
+          <li>3 Personen: 713 €</li>
+          <li>4 Personen: 802 €</li>
+          <li>5 Personen: 933 €</li>
+        </ul>
+      </Modal>, welche Wohnungsangebote für einen Hartz IV beziehenden Haushalt in Frage kommen. Klicke auf einen Stadtteil, um die einzelnen Wohnungsangebote zu sehen.
+      </p>
+    </LayoutConstraint>
+    <AffordabilityMapH4 />
+    <LayoutConstraint>
+      <p>
+        Für Hartz IV beziehende Haushalte ist die Situation auf dem Mietmarkt besonders angespannt. <strong>So kämen für einen vierköpfigen Haushalt, der Hartz IV bezieht, außerhalb des S-Bahn-Rings nur 9&nbsp;% der Angebote, innerhalb nur 0,4&nbsp;% der Angebote in Frage</strong>. Nur für diesen geringen Anteil der Wohnungsangebote würden die Wohnkosten vom Jobcenter vollständig übernommen.
+      </p>
+      <Plot1_5_4 source="/visualization-data/1.5.4_leistbare_wohnungen_barchart.csv" title="Mit Hartz IV im S-Bahn-Ring umziehen – fast unmöglich" subtitle="Anteil der Angebote, bei denen die Mietkosten vom Jobcenter übernommen würden.">
+        <p>
+          Das Jobcenter übernimmt die Kosten der Unterkunft für Wohnungen entsprechend der Haushaltsgröße. Um zu bestimmen, welche Wohnungen für welche Haushaltsgröße in Frage kommen, verwenden wir folgenden Schlüssel:
+        </p>
+        <ul>
+          <li>1 Person: 1 bis einschließlich 2 Zimmer</li>
+          <li>2 Personen: 2 bis einschließlich 3 Zimmer</li>
+          <li>3 Personen: 3 bis einschließlich 4 Zimmer</li>
+          <li>4 Personen: 4 bis einschließlich 5 Zimmer</li>
+          <li>5 Personen: 5 bis einschließlich 6 Zimmer</li>
+        </ul>
+        <p>
+          Als zulässige Gesamtaufwendungen für Kosten der Unterkunft und Heizung (= Kosten der Unterkunft) wurden folgende Beträge verwendet:
+        </p>
+        <ul>
+          <li>1 Person: 472 €</li>
+          <li>2 Personen: 553 €</li>
+          <li>3 Personen: 713 €</li>
+          <li>4 Personen: 802 €</li>
+          <li>5 Personen: 933 €</li>
+        </ul>
+      </Plot1_5_4>
+      <h2><em>Beispiel:</em> Mit Hartz IV auf Wohnungssuche in Neukölln</h2>
+      <p>
+        Als die alleinerziehende Kristin im September 2018 von ihrem Vermieter eine Mieterhöhung bekam, war sie schockiert. Ganze 50 Euro sollte sie monatlich mehr zahlen. Weil Kristin ALG II bezieht, wurden ihre Wohnkosten bislang vollständig durch das Jobcenter getragen. Nach der Mieterhöhung <strong>fordert das Jobcenter</strong> Kristin auf, ihre <strong>Kosten der Unterkunft „zu senken“</strong>. Für sie bedeutet das: Umziehen.
+      </p>
+      <p>
+        Da Kristins Tochter in Neukölln zur Schule geht, möchte sie nur ungern ihren Bezirk verlassen. Online sucht sie nach Wohnungsangeboten in Neukölln und im Nachbarbezirk Friedrichshain-Kreuzberg. Doch auch nach Monaten der Suche ist sie immer noch nicht fündig geworden. Denn für <strong>sie gibt es fast keine Wohnungen, deren Mietkosten das Jobcenter übernehmen würde</strong>.
+      </p>
+      <p>
+        <strong>In 12 Monaten</strong> kommen für sie einmal insgesamt <strong>93 Angebote in Neukölln</strong> und nur <strong>20 Angebote in Friedrichshain-Kreuzberg</strong> in Frage. Doch auch bei den Besichtigungen war sie erfolglos, denn sie konkurriert mit hunderten anderen Wohnungssuchenden. Die 50 Euro, die sie nun mehr an ihrem Vermieter zahlen muss, gehen solange von ihrem ohnehin schon knappen monatlichen ALG II-Satz ab.
+      </p>
+      <Plot1_5_7 source="/visualization-data/1.5.7_exkurs_kdu_2pers_lineplot.csv" title="Kaum Angebote für Hartz IV-Empfänger*innen in Neukölln" subtitle="Anzahl der Wohnungsinserate pro Woche, bei denen die Wohnkosten für einen 2-Personen-Haushalt vom Jobcenter als „Kosten der Unterkunft“ übernommen werden.">
+        <p>
+          Das Jobcenter übernimmt die Kosten der Unterkunft für Wohnungen entsprechend der Haushaltsgröße. Um zu bestimmen, welche Wohnungen für welche Haushaltsgröße in Frage kommen, verwenden wir folgenden Schlüssel:
+        </p>
+        <ul>
+          <li>1 Person: 1 bis einschließlich 2 Zimmer</li>
+          <li>2 Personen: 2 bis einschließlich 3 Zimmer</li>
+          <li>3 Personen: 3 bis einschließlich 4 Zimmer</li>
+          <li>4 Personen: 4 bis einschließlich 5 Zimmer</li>
+          <li>5 Personen: 5 bis einschließlich 6 Zimmer</li>
+        </ul>
+        <p>
+          Als zulässige Gesamtaufwendungen für Kosten der Unterkunft und Heizung (= Kosten der Unterkunft) wurden folgende Beträge verwendet:
+        </p>
+        <ul>
+          <li>1 Person: 472 €</li>
+          <li>2 Personen: 553 €</li>
+          <li>3 Personen: 713 €</li>
+          <li>4 Personen: 802 €</li>
+          <li>5 Personen: 933 €</li>
+        </ul>
+      </Plot1_5_7>
+    </LayoutConstraint>
+    <IllustratedText id="unter-verdrangungsdruck" imgSrc="leistbarkeit_3bg.png" textLeft>
+      <h1>Hier droht <em>Verdrängung</em></h1>
+      <p>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.berliner-zeitung.de/berlin/exklusive-forsa-umfrage-jeder-zweite-berliner-hat-angst-vor-steigenden-mieten-32130340">50&nbsp;% der Berliner Mieter*innen haben Angst, aus ihren Kiezen verdrängt zu werden</a>. Diese Angst ist berechtigt: Tatsächlich gibt es für Vermieter*innen eine finanzielle Motivation, alte durch neue, finanzstärkere Mieter*innen zu ersetzen. Denn <a target="_blank" rel="noopener noreferrer" href="https://www.hebbel-am-ufer.de/wohnungskrise-berlin-andrej-holm/">je höher der Abstand zwischen Bestandsmieten und Einnahmen bei Neuvermietungen</a>, desto höher auch der wirtschaftliche Anreiz, die bestehenden Mietverträge aufzulösen.
+      </p>
+    </IllustratedText>
+    <LayoutConstraint>
+      <p>
+        <strong>Besonders prekär lebende Berliner*innen</strong>, für die Mieterhöhungen oder ein Umzug in der selben oder in anliegende Gegenden nicht bezahlbar sind, <strong>sind von Verdrängung betroffen</strong>.
+      </p>
+      <p>
+        In der folgenden Karte <Modal modalLink="messen wir den Verdrängungsdruck">
+          <p>
+            Für die Bestimmung des Verdrängungsdrucks haben wir Prekarität und die Miethöhe bei Neuvermietung kombiniert. Prekarität wird dabei durch den Anteil Transferleistungsbezieher*innen (z. B. Grundsicherung) in einem Gebiet bestimmt. Hierfür verwenden wir den Statusindex des <a target="_blank" rel="noopener noreferrer" href="https://www.stadtentwicklung.berlin.de/planen/basisdaten_stadtentwicklung/monitoring/de/2017/index.shtml">Monitoring für Soziale Stadtentwicklung 2017</a>. Die Miethöhe wird über die durchschnittliche Gesamtmiete (bruttowarm) in den jeweiligen Kiezen gemessen. Kieze mit unterdurchschnittlicher Prekarität wurden als Gebiet mit unterdurchschnittlichem Verdrängungsdruck kategorisiert. Alle verbleibenden Kieze wurden bezüglich der drei Indikatoren Prekarität, Miete und Verdrängungsdruck jeweils in gleich große Intervalle aufgeteilt und so den Kategorien „mittel“, „hoch“ und „sehr hoch“ zugeordnet. Kieze mit weniger als 25 Angeboten oder unbekannter Prekarität wurden als „unsichere Datenlage“ von der Analyse ausgenommen. Achtung: Die Karte zeigt den relativen Verdrängungsdruck. Auch an Orten, in denen unterdurchschnittlicher Verdrängungsdruck vorherrscht, kann Verdrängung stattfinden. Die Berechnung des Verdrängungsdrucks basiert auf der von Andrej Holm und Guido Schulz <a target="_blank" rel="noopener noreferrer" href="https://www.researchgate.net/publication/308852282_GentriMap_Ein_Messmodell_fur_Gentrification_und_Verdrangung_Verdrangungsprozesse_und_Bleibestrategien"> entwickelten Methodik zur Identifikation von Gentrifizierungs- und Verdrängungsgebieten</a>.
+        </p></Modal> in den einzelnen Kiezen. Je höher der Anteil prekär lebender Bevölkerung einerseits, und das Niveau der Angebotsmieten andererseits, desto höher der Verdrängungsdruck.
+      </p>
+    </LayoutConstraint>
+    <GentrificationIndexMap />
+    <LayoutConstraint>
+      <p>
+        Unsere Analysen zeigen: <strong>Die Mietpreise, zu denen Wohnungen in Berlin angeboten werden, sind für große Teile der Berliner Bevölkerung schlicht nicht mehr leistbar</strong>. Auch für Mieter*innen aus der Mittelschicht wird es immer schwieriger, bezahlbaren Wohnraum in der Stadt zu finden. Besonders hart trifft diese Entwicklung aber Menschen mit kleinem Geldbeutel.
+      </p>
+      <p>
+        Derweil generieren Immobilienbesitzer*innen, vor allem große Konzerne, enorme Profite. Im <Link to="/wohnen-als-ware">folgenden Kapitel „Wohnen als Ware“</Link> zeigen wir, wohin die Einnahmen aus Vermietung fließen und wer von der angespannten Lage profitiert.
+      </p>
+    </LayoutConstraint>
+    <ChapterNavigation current="1" />
+</Page>

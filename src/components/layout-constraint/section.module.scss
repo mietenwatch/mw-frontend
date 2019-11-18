@@ -1,0 +1,38 @@
+@import "../../styles/helpers.scss";
+
+.section {
+  margin: 0 auto;
+
+  @include mobile {
+    padding: 1rem;
+    // max-width: 400px;
+  }
+
+  @include tablet {
+    padding: 2rem;
+    // max-width: 400px;
+  }
+
+  @include tablet-landscape {
+    padding: 2.5rem 1.5rem;
+    max-width: 90%;
+  }
+
+  @include desktop {
+    padding: 3rem 2rem;
+    max-width: 800px;
+  }
+
+  @include desktop-hd {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+  }
+
+  & a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+import Hero from "../components/hero";
+import LayoutConstraint from "../components/layout-constraint";
+import HomeChapterContainer from "../components/homeChapterContainer";
+import HomeChapter from "../components/homeChapter";
+import IllustratedText from "../components/illustratedText";
+import Accordion from "../components/accordion";
+import AccordionItem from "../components/accordionItem";
+import Image from "../components/layout/image";
+import Page from "../components/layout/page";
+import PressList from "../components/press/PressList";
+import PressItem from "../components/press/PressItem";
+
+<Page className="page--home">
+  <Hero title="Berlin ist unbezahlbar.">
+    Von April 2018 bis Oktober 2019 haben wir flächendeckend Daten über den Berliner Mietmarkt gesammelt und ausgewertet. Die Ergebnisse sind alarmierend.
+  </Hero>
+  <div style="z-index:200">
+  <HomeChapterContainer>
+    <HomeChapter title="Leistbarkeit" href="/leistbarkeit" imgSrc="leistbarkeit_homechapter.png" imgAlt="Leistbarkeit">Berlin ist eine Mieter*innen-Stadt. Aber wer kann sich das Wohnen in Berlin noch leisten? Wo gibt es leistbare Angebote für welches Einkommen? Wo ist die Gefahr von Verdrängung am größten?</HomeChapter>
+    <HomeChapter title="Wohnen als Ware" href="/wohnen-als-ware" imgSrc="wohnen-als-ware_homechapter.png" imgAlt="Leistbarkeit">Wohnraum wird als Ware gehandelt. Wer sind die Akteure und wie machen sie Geld? Was wird gegen die dramatischen Entwicklungen auf dem Mietmarkt getan? Und warum ist das nicht genug?</HomeChapter>
+    <HomeChapter title="Antworten" href="/antworten" imgSrc="antworten_homechapter.png" imgAlt="Leistbarkeit">Wie können wirksame Maßnahmen gegen den Mietenwahnsinn aussehen? Welche Auswirkungen hätte der Mietendeckel? Und was würde sich für Berlins Mieter*innen bei einer Vergesellschaftung großer Wohnungskonzerne verändern?</HomeChapter>
+  </HomeChapterContainer>
+  <LayoutConstraint>
+
+# Berlins Mietmarkt unter der Lupe
+
+<p>Wohnen ist ein menschliches <strong>Grundbedürfnis</strong> wie Wasser, Essen oder Kleidung. Wenn dieses Grundbedürfnis jedoch den Kräften des Marktes überlassen wird, werden Menschen mit kleinerem Geldbeutel zwangsläufig ausgeschlossen.</p>
+<p>Viele Großstädte haben in den letzten Jahren <strong>explodierende Mieten</strong> erlebt. In Berlin ist der Spekulationsboom noch in vollem Gange. Für viele Menschen, die in und für die Stadt unverzichtbare Arbeit verrichten, wird hier zu wohnen unbezahlbar. Berliner*innen werden zunehmend aus ihren Kiezen verdrängt. Weil sie oft keine neue leistbare Wohnung finden, müssen sie einen Großteil ihres Einkommens für die Miete ausgeben.</p>
+<p>Bisherige Analysen des Mietmarkts stoßen oft an eine Grenze: Die Datenlage ist zu schlecht, um ein <strong>akkurates Bild der ganzen Stadt, einzelner Nachbarschaften oder einzelner Wohnungsanbieter</strong> zu zeichnen.</p>
+</LayoutConstraint>
+<IllustratedText imgSrc="all_offers.png" textLeft>
+  <div data-id="1.2.2">
+    <p>Mit „Mietenwatch“ wollen wir die Situation auf dem Berliner Mietmarkt greifbarer machen.</p>
+    <p>Dafür haben wir seit April 2018 rund <strong>90 000 Online-Wohnungsinserate</strong> aus ganz Berlin gesammelt. Es handelt sich um umfassende Daten zu angebotenen Mietwohnungen: von Nettokaltmieten über Nebenkosten bis zur Ausstattung und Lage. <strong>Diese Daten haben wir ausgewertet</strong> und können zeigen, wie <strong>dramatisch die Lage am Mietmarkt in Berlin ist</strong>. Wir betrachten, wie mit Wohnraum Geld gemacht wird und wer die <strong>zentralen Akteure</strong> sind. Wir untersuchen, wie bisherige wohnpolitische Maßnahmen auf den außer Kontrolle geratenen Mietmarkt wirken. Wir analysieren, <strong>welche Konsequenzen der Mietendeckel oder die Vergesellschaftung privater Immobilienkonzerne auf den Markt</strong> hätten.</p>
+  </div>
+</IllustratedText>
+<LayoutConstraint id="faq">
+
+# Häufig gestellte Fragen
+<Accordion>
+  <AccordionItem buttonText="Wie habt ihr denn den Mietmarkt erfasst?">
+    <p>Seit April 2018 haben wir einmal täglich die <strong>Inserate von Mietwohnungen in Berlin von großen Online-Portalen</strong> gesammelt. Etwaige spätere Änderungen an einem Inserat berücksichtigen wir nicht. Damit erfasst unser Projekt nur den <strong>Angebotsmietmarkt und nicht die Situation im Wohnungsbestand</strong>. Alte, bestehende Mietverträge werden von unseren Daten nicht abgebildet.</p>
+  </AccordionItem>
+  <AccordionItem buttonText="Warum betrachtet ihr nur den Online-Markt?">
+    <p>Ein <strong>Großteil der Mietwohnungen werden über Online-Portale vermietet</strong>. Natürlich gibt es bestimmte Marktsegmente, die auch über andere Wege vermietet werden (etwa das Luxus-Segment, Wohnungen von Genossenschaften oder preisgebundene Wohnungen aus dem Sozialwohnungsbau). Wir wollen den Markt wie folgt analysieren: <strong>Wie ist die Lage, wenn ich morgen in oder nach Berlin umziehen will?</strong></p>
+  </AccordionItem>
+  <AccordionItem buttonText="Viele Analysen zeigen doch schon, wie dramatisch die Lage auf dem Berliner Wohnungsmarkt ist. Warum braucht es Mietenwatch?">
+    <p>Mit knapp <strong>90 000 detailierten Einzelangeboten</strong> für Mietwohnungen in Berlin haben wir eine <strong>sehr umfangreiche und tiefe Datengrundlage</strong>. So kann Mietenwatch ein <strong>aussagekräftiges Gesamtbild</strong> des Berliner Mietmarkts zeichnen. Außerdem können wir damit die Entwicklungen in den einzelnen <strong>Nachbarschaften</strong> abbilden oder die <strong>Geschäftspraktiken einzelner Anbieter</strong> analysieren. Zudem untersuchen wir, wie sich geltende und etwaige politische Maßnahmen auf die angespannte Lage auswirken würden.</p>
+  </AccordionItem>
+  <AccordionItem buttonText="Städte verändern sich. Die Entwicklungen in Berlin sind vollkommen normal. Was ist so schlimm an steigenden Mieten?">
+    <p>Steigende Mieten führen in Berlin zu <a target="_blank" rel="noopener noreferrer" href="https://www.degruyter.com/viewbooktoc/product/480527">sozialer Ausgrenzung und Verdrängung</a>. Sie sind Teil einer <a target="_blank" rel="noopener noreferrer" href="https://www.spiegel.de/wirtschaft/service/immobilien-in-deutschland-der-spaltpilz-der-gesellschaft-a-1273361.html">riesigen Umverteilung von Billionen von Euro</a> von arm nach reich. Diese Entwicklungen sind weder „normal“ noch unveränderlich. Gezielte politische Maßnahmen könnten diese Prozesse aufhalten und eine soziale Wohnraumversorgung sicherstellen. Dass andernorts die Lage noch schlechter ist, ist kein Grund dafür, sich mit überteuerten Mieten zufrieden zu geben. In Berlin ist die Situation besonders brisant, weil explodierende Mieten oft auf niedrige Einkommen stoßen.</p>
+  </AccordionItem>
+  <AccordionItem buttonText="Mietendeckel? Enteignung? Das klingt nach sozialistischer Planwirtschaft.">
+    <p>Beispiele aus <a target="_blank" rel="noopener noreferrer" href="https://www.sueddeutsche.de/wirtschaft/mietendeckel-berlin-oesterreich-walter-rosifka-1.4578378">anderen Städten</a> zeigen, dass eine gerechtere Wohnungspolitik möglich ist und z. B. ein <strong>Mietendeckel gut funktioniert</strong>. In Wien werden nur rund 10 Prozent der Wohnungen auf dem freien Markt angeboten. Alle anderen sind entweder städtisch, anderweitig gebunden oder durch einen Mietendeckel reguliert. Nur so schafft man in einer kapitalistischen Metropole einen einigermaßen funktionierenden Wohnungsmarkt. <strong>Der freie Markt regelt es nicht</strong>. Eine langfristige <strong>soziale Wohnungsversorgung</strong> muss über den Profitabsichten von privaten Wohnungskonzerne stehen.</p>
+  </AccordionItem>
+  <AccordionItem buttonText="Alle wollen nach Berlin. In der Stadt gibt es einfach nicht genug Wohnraum für alle. Da ist es doch in Ordnung, wenn ärmere Menschen in günstigere Gegenden ziehen müssen.">
+    <p>Die <strong>soziale Mischung</strong> ist für eine lebendige Stadt unverzichtbar und auch Menschen, die weniger finanzielle Mitteln haben, haben ein <strong>Recht darauf, in der Innenstadt zu wohnen und in ihrem Kiez zu bleiben</strong>. Gerade Menschen mit geringerem Einkommen oder ältere Personen sind darauf angewiesen, <strong>in der Nähe ihrer Arbeitsstelle oder ihres sozialen Umfeldes</strong> zu wohnen. Menschen, die für die Stadt <strong>wichtige Arbeit</strong> verrichten – z. B. die Lebensmittel verkaufen, Büros putzen, Kleinkinder betreuen, in Krankenhäuser arbeiten – sollen in der Stadt wohnen können.</p>
+  </AccordionItem>
+  <AccordionItem buttonText="Welche Daten werden über mich gespeichert?">
+    <p>Dein Klickverhalten oder Eingaben (z.&nbsp;B. Angaben zu deinem Einkommen im Kapitel Leistbarkeit) werden nicht gespeichert. <a target="_blank" rel="noopener noreferrer" href="https://www.netlify.com/gdpr/">Unser Hoster erhebt jedoch Zugriffsstatistiken</a> und speichert deshalb für maximal 30 Tage deine IP-Adresse.</p>
+  </AccordionItem>
+</Accordion>
+</LayoutConstraint>
+<PressList>
+  <PressItem logoSrc="taz.png" href="https://taz.de/Mietenwatch-Studie/!5628447/" />
+  <PressItem logoSrc="taz.png" href="https://taz.de/Mietendeckel-in-Berlin/!5628554/" />
+  <PressItem logoSrc="taz.png" href="https://taz.de/Mietenwatch-Studie/!5628555/" />
+  <PressItem logoSrc="taz.png" href="https://taz.de/Mietenwatch-Gentrifizierungskiez/!5628436/" />
+  <PressItem logoSrc="berlinerzeitung.png" href="https://www.berliner-zeitung.de/berlin/streitgespraech-zum-berliner-wohnungsmarkt--nur-neuer-wohnraum-schafft-entspannung--33286306" />
+  <PressItem logoSrc="berlinerzeitung.png" href="https://www.berliner-zeitung.de/berlin/zerrbild-mietenspiegel-wer-sich-wirklich-in-berlin-noch-eine-wohnung-leisten-kann-33281100" />
+  <PressItem logoSrc="berlinerkurier.png" href="https://www.berliner-kurier.de/berlin/kiez---stadt/zwei-zimmer--kueche--konto-leer--so-arm-macht-uns-der-mieten-irrsinn-in-berlin-wirklich-33281350" />
+  <PressItem logoSrc="berlinermorgenpost.png" href="https://www.morgenpost.de/berlin/article227307893/Mietenwatch-In-Berlin-kommen-viele-Mieter-an-Kostengrenze.html" />
+  <PressItem logoSrc="bz.png" href="https://www.bz-berlin.de/berlin/laut-mietenwatch-berliner-single-haushalte-koennen-sich-kaum-wohnungen-leisten" />
+  <PressItem logoSrc="tagesspiegel.png" href="https://www.tagesspiegel.de/berlin/bezirke/leute-newsletter-am-mittwoch-hier-gibt-es-noch-leistbare-wohnungen-in-neukoelln-und-mitte/25095740.html" />
+  <PressItem logoSrc="tagesspiegel.png" href="https://amp.tagesspiegel.de/berlin/neuer-wohnungsrechner-mietenwatch-durchschnittsverdiener-werden-aus-dem-s-bahn-ring-verdraengt/25095192.html?__twitter_impression=true" />
+  <PressItem logoSrc="netzpolitik.png" href="https://netzpolitik.org/2019/mietenwatch-projekt-visualisiert-dramatische-entwicklung-bei-berliner-mieten/" />
+  <PressItem logoSrc="neues-deutschland.png" href="https://www.neues-deutschland.de/artikel/1126843.mietenwatch-selbst-die-mittelschicht-kann-sich-wohnen-nicht-mehr-leisten.html" />
+  <PressItem logoSrc="dradiokultur.png" href="https://www.deutschlandfunkkultur.de/datenprojekt-mietenwatch-tiefer-einblick-in-den-berliner.2165.de.html?dram:article_id=460586" />
+  <PressItem logoSrc="derfreitag.png" href="https://www.freitag.de/autoren/bennyk/sind-sie-zu-teuer-bist-du-zu-arm" />
+</PressList>
+</div>
+</Page>

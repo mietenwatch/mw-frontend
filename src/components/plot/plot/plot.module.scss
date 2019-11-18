@@ -1,0 +1,45 @@
+@import '../../../styles/helpers.scss';
+
+.plot {
+  margin-top: 1rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.45;
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.plotWrapper {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  @include desktop {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+}
+
+.plotWrapperNoMargin {
+  margin-top: 0;
+
+  @include desktop {
+    margin-top: 0;
+  }
+}
+
+.moreInformationTrigger {
+  display: block;
+  font-family: $ff-sans;
+  font-size: 0.65rem;
+  margin-top: 0.5rem;
+  text-align: right;
+  width: 100%;
+}

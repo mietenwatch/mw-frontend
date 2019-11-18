@@ -1,0 +1,50 @@
+#berlins-big-players-bbp img {
+  // width:70% !important;
+  @include tablet {
+    // transform:translateX(-3rem) !important;
+    width:32rem !important;
+  }
+  @include tablet-landscape {
+    width:34rem !important;
+  }
+  @include desktop {
+    width:36rem !important;
+  }
+  @include desktop-hd {
+    width:38rem !important;
+  }
+}
+
+#grundbedurfnis-wohnen img {
+  // width:80% !important;
+  @include tablet {
+    transform:translateX(-3rem) !important;
+    width:36rem !important;
+  }
+  @include tablet-landscape {
+    width:38rem !important;
+  }
+  @include desktop {
+    width:40rem !important;
+  }
+  @include desktop-hd {
+    width:42rem !important;
+  }
+}
+
+#berlin-fur-alle img {
+  @include tablet {
+    transform:translateX(-12rem) !important;
+    width:170% !important;
+  }
+  @include tablet-landscape {
+    width:34rem !important;
+  }
+  @include desktop {
+    width:40rem !important;
+  }
+  @include desktop-hd {
+    width:45rem !important;
+    transform:translateX(-14rem) !important;
+  }
+}

@@ -1,0 +1,52 @@
+@import "../../styles/helpers.scss";
+
+.buttonContainer {
+  margin: 0 auto;
+  @include mobile {
+    max-width: 400px;
+  }
+  @include tablet {
+    max-width: 400px;
+  }
+  @include tablet-landscape {
+    max-width: 90%;
+  }
+  @include desktop {
+    max-width: 800px;
+  }
+  @include desktop-hd {
+    max-width: 1000px;
+  }
+}
+.loadingText {
+  height: calc(65vh);
+  line-height: calc(65vh);
+  animation: blinker 1s linear infinite;
+  vertical-align: middle;
+}
+
+.hoverInfo {
+  height: 120px;
+  padding-top: 20px;
+}
+
+.mapContainer {
+  text-align: center;
+  position: relative;
+}
+
+.companyButton {
+  font-family: $ff-sans;
+  font-weight:600;
+  display: inline-block;
+  font-size:.7rem;
+  margin:.4rem;
+  padding: .5rem;
+  cursor: pointer;
+  background:rgba(0,0,0,.05);
+
+  &.active {
+    color: white;
+    background:rgba(0,0,0,.1);
+  }
+}

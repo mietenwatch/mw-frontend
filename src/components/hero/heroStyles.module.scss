@@ -1,0 +1,47 @@
+@import "../../styles/helpers.scss";
+
+.hero {
+  padding-top: 2rem;
+  margin-top: -3rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  &__image {
+    position: absolute !important;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100% !important;
+  }
+  &__titleContainer{
+    position: relative;
+    z-index: 20;
+  }
+  &__title {
+    color: #fff;
+    font-size: 2.6rem;
+    @include tablet {
+      font-size: 3.5rem;
+    }
+    @include desktop {
+      font-size: 4.5rem;
+    }
+    text-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+  }
+  &__subtitle {
+    font-size: 1.25rem;
+    @include tablet {
+      font-size: 1.5rem;
+    }
+    font-style: italic;
+    font-family: $ff-serif;
+    text-shadow: 0 0.05rem 0.3rem rgba(0, 0, 0, 0.4);
+    max-width: 48rem;
+  }
+}

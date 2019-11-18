@@ -1,0 +1,51 @@
+@import "../../styles/helpers.scss";
+
+.mapContainer {
+  overflow: hidden;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  @include mobile {
+    height: calc(40vh);
+  }
+  @include tablet {
+    height: calc(50vh);
+  }
+  @include tablet-landscape {
+    height: calc(65vh);
+  }
+  @include desktop {
+    height: calc(65vh);
+  }
+  @include desktop-hd {
+    height: calc(65vh);
+  }
+  &.loading {
+    animation: blinker 1s linear infinite;
+  }
+}
+
+.backButton {
+  position: absolute;
+  z-index: 500;
+  top: 10px;
+  cursor: pointer;
+  fontWeight: bold;
+  left: calc(50% - 40px);
+  padding: 10px;
+  background: white;
+  border: 1px solid black;
+}
+
+.loadingText {
+  width: 100%;
+  animation: blinker 1s linear infinite;
+  position: absolute;
+  z-index: 1000;
+  top: 280px;
+  fontWeight: bold;
+  color: white;
+}

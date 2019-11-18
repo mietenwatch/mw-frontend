@@ -1,0 +1,61 @@
+@import "../../styles/helpers.scss";
+
+.mapLegend {
+  @include mobile {
+    right: 10px;
+    max-width: 7rem;
+    font-size: 0.5rem;
+  }
+  @include tablet {
+    right: 10px;
+    max-width: 8rem;
+    font-size: 0.7rem;
+  }
+  @include tablet-landscape {
+    right: calc(30% - 150px);
+    max-width: 10rem;
+    font-size: 0.7rem;
+  }
+  @include desktop {
+    right: calc(30% - 150px);
+    max-width: 12rem;
+    font-size: 0.7rem;
+  }
+  @include desktop-hd {
+    right: calc(30% - 150px);
+    max-width: 12rem;
+    font-size: 0.7rem;
+  }
+
+  padding: 0.5rem;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 500;
+  top: 10px;
+  b {
+    text-align: left;
+    float: left;
+  }
+  .item {
+    clear: both;
+    padding: 3px;
+  }
+  .color {
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+    float: left;
+    @include mobile {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .text {
+    line-height: 15px;
+    vertical-align: middle;
+    float: left;
+    @include mobile {
+      line-height: 10px;
+    }
+  }
+}

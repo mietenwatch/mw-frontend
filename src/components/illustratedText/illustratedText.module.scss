@@ -1,0 +1,70 @@
+@import "../../styles/helpers.scss";
+
+.container {
+  padding: 1rem 2rem;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  @include mobile {
+    display: block;
+    padding: 1rem;
+  }
+  & > :first-child,
+  > :last-child {
+    margin: 0 1rem;
+    @include mobile {
+      margin: 0;
+    }
+  }
+  & a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.image {
+  flex-basis: 50%;
+  overflow: visible !important;
+  max-width: 30rem;
+  margin: 2rem auto !important;
+  @include tablet {
+    margin: 0 !important;
+    max-width: none;
+  }
+  & > div {
+    padding-bottom: 60vh !important;
+    @include tablet {
+      padding-bottom: 90vh !important;
+    }
+  }
+  & img {
+    object-fit: contain !important;
+    max-width: none;
+  }
+}
+.text {
+  flex-basis: 50%;
+  & p {
+    margin: 1.6rem 0;
+  }
+  h1 {
+    margin-top: 0;
+    line-height: 1;
+    text-align: left;
+    font-size: 3.5rem;
+    @include tablet {
+      font-size: 3.75rem;
+    }
+    @include tablet-landscape {
+      font-size: 4rem;
+    }
+    @include desktop {
+      font-size: 4.25rem;
+    }
+    @include desktop-hd {
+      font-size: 4.5rem;
+    }
+  }
+}

@@ -1,0 +1,447 @@
+geo_lor_planungsraum_id,Planungsraum,Verdrängungsdruck,Prekarität,Miethöhe
+01011101,Stülerstraße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011102,Großer Tiergarten,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+01011103,Lützowstraße,sehr hoch,hoch,sehr hoch
+01011104,Körnerstraße,sehr hoch,hoch,sehr hoch
+01011105,Nördlicher Landwehrkanal,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011201,Wilhelmstraße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011202,Unter den Linden Nord,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011203,Unter den Linden Süd,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011204,Leipziger Straße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011301,Charitéviertel,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011302,Oranienburger Straße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011303,Alexanderplatzviertel,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011304,Karl-Marx-Allee,sehr hoch,mittel,sehr hoch
+01011305,Heine-Viertel West,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011306,Heine-Viertel Ost,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011401,Invalidenstraße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01011402,Arkonaplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01022101,Huttenkiez,sehr hoch,sehr hoch,hoch
+01022102,Beusselkiez,sehr hoch,sehr hoch,hoch
+01022103,Westhafen,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+01022104,Emdener Straße,hoch,hoch,hoch
+01022105,Zwinglistraße,sehr hoch,sehr hoch,hoch
+01022106,Elberfelder Straße,unterdurchschnittlich,unterdurchschnittlich,hoch
+01022201,Stephankiez,hoch,mittel,mittel
+01022202,Heidestraße,sehr hoch,sehr hoch,sehr hoch
+01022203,Lübecker Straße,hoch,sehr hoch,mittel
+01022204,Thomasiusstraße,unterdurchschnittlich,unterdurchschnittlich,hoch
+01022205,Zillesiedlung,mittel,hoch,unterdurchschnittlich
+01022206,Lüneburger Straße,unterdurchschnittlich,unterdurchschnittlich,hoch
+01022207,Hansaviertel,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+01033101,Soldiner Straße,sehr hoch,sehr hoch,mittel
+01033102,Gesundbrunnen,hoch,sehr hoch,unterdurchschnittlich
+01033201,Brunnenstraße,sehr hoch,sehr hoch,sehr hoch
+01033202,Humboldthain Süd,hoch,hoch,mittel
+01033203,Humboldthain Nordwest,sehr hoch,sehr hoch,sehr hoch
+01044101,Rehberge,hoch,hoch,mittel
+01044102,Schillerpark,hoch,hoch,unterdurchschnittlich
+01044103,Westliche Müllerstraße,hoch,hoch,mittel
+01044201,Reinickendorfer Straße,sehr hoch,sehr hoch,unterdurchschnittlich
+01044202,Sparrplatz,hoch,sehr hoch,mittel
+01044203,Leopoldplatz,sehr hoch,sehr hoch,mittel
+02010101,Askanischer Platz,sehr hoch,sehr hoch,sehr hoch
+02010102,Mehringplatz,sehr hoch,sehr hoch,hoch
+02010103,Moritzplatz,sehr hoch,sehr hoch,hoch
+02010104,Wassertorplatz,sehr hoch,sehr hoch,unterdurchschnittlich
+02020201,Gleisdreieck/Entwicklungsgebiet,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+02020202,Rathaus Yorckstraße,unterdurchschnittlich,mittel,hoch
+02020203,Viktoriapark,unterdurchschnittlich,unterdurchschnittlich,hoch
+02020204,Urbanstraße,unterdurchschnittlich,unterdurchschnittlich,hoch
+02020205,Chamissokiez,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+02020206,Graefekiez,sehr hoch,mittel,sehr hoch
+02030301,Oranienplatz,sehr hoch,sehr hoch,mittel
+02030302,Lausitzer Platz,hoch,hoch,hoch
+02030401,Reichenberger Straße,sehr hoch,hoch,sehr hoch
+02030402,Wrangelkiez,sehr hoch,hoch,sehr hoch
+02040501,Barnimkiez,sehr hoch,hoch,sehr hoch
+02040502,Friedenstraße,unterdurchschnittlich,mittel,sehr hoch
+02040503,Richard-Sorge-Viertel,unterdurchschnittlich,unterdurchschnittlich,hoch
+02040701,Andreasviertel,sehr hoch,mittel,sehr hoch
+02040702,Weberwiese,unterdurchschnittlich,unterdurchschnittlich,hoch
+02040703,Wriezener Bahnhof/Entwicklungsgebiet,sehr hoch,hoch,sehr hoch
+02050601,Hausburgviertel,unterdurchschnittlich,mittel,hoch
+02050602,Samariterviertel,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+02050801,Traveplatz,unterdurchschnittlich,mittel,sehr hoch
+02050802,Boxhagener Platz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+02050803,Stralauer Kiez,unterdurchschnittlich,mittel,sehr hoch
+02050804,Stralauer Halbinsel,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+03010101,Bucher Forst,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03010102,Buch,mittel,hoch,unterdurchschnittlich
+03010104,Lietzengraben,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+03020203,Blankenfelde,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+03020209,Niederschönhausen,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03020210,Herthaplatz,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03020307,Buchholz,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03030405,Karow Nord,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03030406,Alt-Karow,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03030711,Blankenburg,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+03030715,Heinersdorf,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03030716,Märchenland,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+03040508,Rosenthal,unterdurchschnittlich,unterdurchschnittlich,mittel
+03040512,Wilhelmsruh,unterdurchschnittlich,unterdurchschnittlich,mittel
+03040513,Schönholz,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03040614,Pankow Zentrum,unterdurchschnittlich,unterdurchschnittlich,mittel
+03040818,Pankow Süd,unterdurchschnittlich,unterdurchschnittlich,mittel
+03050919,Gustav-Adolf-Straße,unterdurchschnittlich,mittel,unterdurchschnittlich
+03050920,Weißer See,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+03050923,Weißenseer Spitze,unterdurchschnittlich,unterdurchschnittlich,mittel
+03050924,Behaimstraße,hoch,mittel,mittel
+03050925,Komponistenviertel Weißensee,unterdurchschnittlich,unterdurchschnittlich,mittel
+03051017,Rennbahnstraße,unterdurchschnittlich,unterdurchschnittlich,mittel
+03051021,Buschallee,mittel,mittel,unterdurchschnittlich
+03051022,Hansastraße,unterdurchschnittlich,mittel,unterdurchschnittlich
+03061126,Arnimplatz,unterdurchschnittlich,unterdurchschnittlich,hoch
+03061131,Falkplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+03061227,Humannplatz,unterdurchschnittlich,unterdurchschnittlich,hoch
+03061228,Erich-Weinert-Straße,unterdurchschnittlich,mittel,hoch
+03061332,Helmholtzplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+03061429,Greifswalder Straße,mittel,hoch,unterdurchschnittlich
+03061430,Volkspark Prenzlauer Berg,unsichere Datenlage,hoch,unsichere Datenlage
+03061434,Anton-Saefkow-Park,unterdurchschnittlich,unterdurchschnittlich,hoch
+03061435,Conrad-Blenkle-Straße,hoch,mittel,hoch
+03061441,Eldenaer Straße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+03071536,Teutoburger Platz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+03071537,Kollwitzplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+03071633,Thälmannpark,sehr hoch,mittel,sehr hoch
+03071638,Winsstraße,unterdurchschnittlich,unterdurchschnittlich,hoch
+03071639,Bötzowstraße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04010101,Jungfernheide,hoch,sehr hoch,unterdurchschnittlich
+04010103,Paul-Hertz-Siedlung,hoch,sehr hoch,unterdurchschnittlich
+04020204,Olympiagelände,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+04020205,Siedlung Ruhleben,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+04020206,Angerburger Allee,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+04020207,Flatowallee,unterdurchschnittlich,unterdurchschnittlich,hoch
+04020208,Kranzallee,unterdurchschnittlich,unterdurchschnittlich,hoch
+04020209,Eichkamp,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+04020310,Park Ruhwald,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+04020311,Reichsstraße,unterdurchschnittlich,unterdurchschnittlich,hoch
+04020312,Branitzer Platz,unterdurchschnittlich,unterdurchschnittlich,hoch
+04020313,Königin-Elisabeth-Straße,unterdurchschnittlich,mittel,mittel
+04020314,Messegelände,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+04030415,Schloßgarten,sehr hoch,sehr hoch,sehr hoch
+04030416,Klausenerplatz,mittel,hoch,mittel
+04030417,Schloßstraße,unterdurchschnittlich,unterdurchschnittlich,hoch
+04030518,Tegeler Weg,hoch,hoch,hoch
+04030519,Kaiserin-Augusta-Allee,hoch,hoch,hoch
+04030620,Alt-Lietzow,unterdurchschnittlich,mittel,hoch
+04030621,Spreestadt,sehr hoch,hoch,sehr hoch
+04030622,Richard-Wagner-Straße,hoch,mittel,hoch
+04030623,Ernst-Reuter-Platz,sehr hoch,hoch,sehr hoch
+04030724,Lietzensee,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04030725,Amtsgerichtsplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04030726,Droysenstraße,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04030827,Karl-August-Platz,hoch,mittel,hoch
+04030828,Savignyplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04030929,Hindemithplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04030930,George-Grosz-Platz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04030931,Breitscheidplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04031032,Halensee,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04041133,Güterbahnhof Grunewald,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+04041134,Bismarckallee,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04041135,Hundekehle,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04041136,Hagenplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04041137,Flinsberger Platz,unterdurchschnittlich,unterdurchschnittlich,hoch
+04041238,Kissinger Straße,unterdurchschnittlich,unterdurchschnittlich,hoch
+04041239,Stadion Wilmersdorf,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+04041240,Messelpark,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+04041241,Breite Straße,unterdurchschnittlich,unterdurchschnittlich,mittel
+04041342,Schlangenbader Straße,mittel,mittel,unterdurchschnittlich
+04041343,Binger Straße,unterdurchschnittlich,unterdurchschnittlich,mittel
+04041344,Rüdesheimer Platz,unterdurchschnittlich,unterdurchschnittlich,mittel
+04051445,Eisenzahnstraße,hoch,mittel,hoch
+04051446,Preußenpark,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04051447,Ludwigkirchplatz,unterdurchschnittlich,unterdurchschnittlich,sehr hoch
+04051448,Schaperstraße,unterdurchschnittlich,mittel,sehr hoch
+04051549,Rathaus Wilmersdorf,unterdurchschnittlich,unterdurchschnittlich,hoch
+04051550,Leon-Jessel-Platz,unterdurchschnittlich,unterdurchschnittlich,hoch
+04051551,Brabanter Platz,unterdurchschnittlich,mittel,mittel
+04051652,Nikolsburger Platz,unterdurchschnittlich,unterdurchschnittlich,hoch
+04051653,Prager Platz,unterdurchschnittlich,unterdurchschnittlich,hoch
+04051654,Wilhelmsaue,unterdurchschnittlich,unterdurchschnittlich,hoch
+04051655,Babelsberger Straße,unterdurchschnittlich,mittel,sehr hoch
+04051656,Hildegardstraße,unterdurchschnittlich,unterdurchschnittlich,mittel
+04061757,Forst Grunewald,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+05010101,Hakenfelde Nord,unterdurchschnittlich,mittel,unterdurchschnittlich
+05010102,Goltzstraße,mittel,hoch,unterdurchschnittlich
+05010103,Amorbacher Weg,unterdurchschnittlich,mittel,unterdurchschnittlich
+05010204,Griesingerstraße,hoch,sehr hoch,unterdurchschnittlich
+05010205,An der Tränke,unterdurchschnittlich,unterdurchschnittlich,mittel
+05010206,Gütersloher Weg,hoch,sehr hoch,unterdurchschnittlich
+05010207,Darbystraße,hoch,sehr hoch,unterdurchschnittlich
+05010208,Germersheimer Platz,sehr hoch,sehr hoch,unterdurchschnittlich
+05010209,An der Kappe,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+05010310,Eckschanze,hoch,sehr hoch,unterdurchschnittlich
+05010311,Eiswerder,sehr hoch,sehr hoch,unterdurchschnittlich
+05010312,Kurstraße,sehr hoch,sehr hoch,unterdurchschnittlich
+05010313,Ackerstraße,hoch,sehr hoch,unterdurchschnittlich
+05010314,Carl-Schurz-Straße,mittel,hoch,unterdurchschnittlich
+05010339,Freiheit,unsichere Datenlage,hoch,unsichere Datenlage
+05020415,Isenburger Weg,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+05020416,Am Heideberg,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+05020417,Staakener Straße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+05020418,Spandauer Straße,unterdurchschnittlich,mittel,unterdurchschnittlich
+05020419,Magistratsweg,hoch,sehr hoch,unterdurchschnittlich
+05020420,Werkstraße,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+05020521,Döberitzer Weg,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+05020522,Pillnitzer Weg,sehr hoch,sehr hoch,unterdurchschnittlich
+05020523,Maulbeerallee,sehr hoch,sehr hoch,unterdurchschnittlich
+05020524,Weinmeisterhornweg,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+05020625,Borkumer Straße,mittel,hoch,unterdurchschnittlich
+05020626,Adamstraße,mittel,hoch,unterdurchschnittlich
+05020627,Tiefwerder,hoch,sehr hoch,unterdurchschnittlich
+05020628,Graetschelsteig,unterdurchschnittlich,mittel,unterdurchschnittlich
+05020629,Börnicker Straße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+05030730,Zitadellenweg,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+05030731,Gartenfelder Straße,hoch,sehr hoch,unterdurchschnittlich
+05030832,Rohrdamm,hoch,hoch,unterdurchschnittlich
+05030833,Motardstraße,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+05040934,Alt-Gatow,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+05040935,Groß-Glienicker Weg,unsichere Datenlage,mittel,unsichere Datenlage
+05040936,Jägerallee,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+05040937,Kladower Damm,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+05040938,Kafkastraße,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+06010101,Fichtenberg,unterdurchschnittlich,unterdurchschnittlich,hoch
+06010102,Schloßstraße,unterdurchschnittlich,unterdurchschnittlich,mittel
+06010103,Markelstraße,unterdurchschnittlich,unterdurchschnittlich,mittel
+06010204,Munsterdamm,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06010205,Südende,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06010206,Stadtpark,unterdurchschnittlich,unterdurchschnittlich,mittel
+06010207,Mittelstraße,unterdurchschnittlich,mittel,mittel
+06010208,Bergstraße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06010209,Feuerbachstraße,unterdurchschnittlich,unterdurchschnittlich,mittel
+06010210,Bismarckstraße,unterdurchschnittlich,mittel,unterdurchschnittlich
+06020301,Alt-Lankwitz,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06020302,Komponistenviertel Lankwitz,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06020303,Lankwitz Kirche,mittel,mittel,unterdurchschnittlich
+06020304,Kaiser-Wilhelm-Straße,mittel,mittel,unterdurchschnittlich
+06020305,Gemeindepark Lankwitz,mittel,mittel,unterdurchschnittlich
+06020306,Lankwitz Süd,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06020407,Thermometersiedlung,hoch,sehr hoch,unterdurchschnittlich
+06020408,Lichterfelde Süd,unterdurchschnittlich,mittel,unterdurchschnittlich
+06020409,Königsberger Straße,unterdurchschnittlich,unterdurchschnittlich,mittel
+06020410,Oberhofer Platz,unterdurchschnittlich,unterdurchschnittlich,mittel
+06020411,Schütte-Lanz-Straße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06030501,Berlepschstraße,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+06030502,Zehlendorf Süd,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06030503,Zehlendorf Mitte,unterdurchschnittlich,unterdurchschnittlich,mittel
+06030504,Teltower Damm,unterdurchschnittlich,unterdurchschnittlich,mittel
+06030605,Botanischer Garten,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06030606,Hindenburgdamm,unterdurchschnittlich,unterdurchschnittlich,mittel
+06030607,Goerzwerke,unterdurchschnittlich,unterdurchschnittlich,mittel
+06030608,Schweizer Viertel,unterdurchschnittlich,unterdurchschnittlich,hoch
+06030609,Augustaplatz,unterdurchschnittlich,unterdurchschnittlich,mittel
+06030610,Lichterfelde West,unterdurchschnittlich,unterdurchschnittlich,mittel
+06040701,Wannsee,unterdurchschnittlich,unterdurchschnittlich,hoch
+06040702,Düppel,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+06040703,Nikolassee,unterdurchschnittlich,unterdurchschnittlich,mittel
+06040804,Krumme Lanke,unterdurchschnittlich,unterdurchschnittlich,mittel
+06040805,Fischerhüttenstraße,unterdurchschnittlich,unterdurchschnittlich,mittel
+06040806,Fischtal,unterdurchschnittlich,unterdurchschnittlich,mittel
+06040807,Zehlendorf Eiche,unterdurchschnittlich,unterdurchschnittlich,mittel
+06040808,Hüttenweg,unterdurchschnittlich,unterdurchschnittlich,mittel
+06040809,Thielallee,unterdurchschnittlich,unterdurchschnittlich,hoch
+06040810,Dahlem,unterdurchschnittlich,unterdurchschnittlich,hoch
+07010101,Wittenbergplatz/Viktoria-Luise-Platz,unterdurchschnittlich,unterdurchschnittlich,hoch
+07010102,Nollendorfplatz,sehr hoch,hoch,sehr hoch
+07010103,Barbarossaplatz,unterdurchschnittlich,unterdurchschnittlich,hoch
+07010104,Dennewitzplatz,sehr hoch,hoch,hoch
+07020201,Bayerischer Platz,unterdurchschnittlich,unterdurchschnittlich,hoch
+07020202,Volkspark (Rudolf-Wilde-Park),hoch,mittel,hoch
+07020203,Kaiser-Wilhelm-Platz,hoch,mittel,hoch
+07020204,Schöneberger Insel,unterdurchschnittlich,mittel,hoch
+07030301,Friedenau,unterdurchschnittlich,unterdurchschnittlich,mittel
+07030302,Ceciliengärten,unterdurchschnittlich,unterdurchschnittlich,hoch
+07030303,Grazer Platz,mittel,hoch,mittel
+07040401,Neu-Tempelhof,unterdurchschnittlich,mittel,mittel
+07040402,Lindenhofsiedlung,unsichere Datenlage,mittel,unsichere Datenlage
+07040403,Manteuffelstraße,mittel,hoch,mittel
+07040404,Marienhöhe,hoch,mittel,mittel
+07040405,Rathaus Tempelhof,hoch,hoch,mittel
+07040406,Germaniagarten,sehr hoch,sehr hoch,mittel
+07050501,Rathausstraße,hoch,hoch,unterdurchschnittlich
+07050502,Fritz-Werner-Straße,mittel,hoch,unterdurchschnittlich
+07050503,Eisenacher Straße,mittel,hoch,unterdurchschnittlich
+07050504,Imbrosweg,mittel,mittel,unterdurchschnittlich
+07050505,Hundsteinweg,unterdurchschnittlich,mittel,unterdurchschnittlich
+07050506,Birnhornweg,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+07060601,Marienfelder Allee Nordwest,mittel,hoch,unterdurchschnittlich
+07060602,Kirchstraße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+07060603,Marienfelde Nordost,unsichere Datenlage,mittel,unsichere Datenlage
+07060604,Marienfelde Süd,mittel,hoch,unterdurchschnittlich
+07070701,Kettinger Straße/Schillerstraße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+07070702,Alt-Lichtenrade/Töpchiner Weg,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+07070703,John-Locke-Straße,mittel,hoch,unterdurchschnittlich
+07070704,Nahariyastraße,hoch,sehr hoch,unterdurchschnittlich
+07070705,Franziusweg/Rohrbachstraße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+07070706,Horstwalder Straße/Paplitzer Straße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+07070707,Wittelsbacherstraße,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+08010115,Hasenheide,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+08010116,Wissmannstraße,sehr hoch,sehr hoch,sehr hoch
+08010117,Schillerpromenade,sehr hoch,hoch,hoch
+08010118,Silbersteinstraße,sehr hoch,sehr hoch,mittel
+08010211,Flughafenstraße,sehr hoch,sehr hoch,hoch
+08010212,Rollberg,sehr hoch,sehr hoch,hoch
+08010213,Körnerpark,sehr hoch,sehr hoch,mittel
+08010214,Glasower Straße,sehr hoch,sehr hoch,sehr hoch
+08010301,Reuterkiez,hoch,hoch,hoch
+08010302,Bouchéstraße,sehr hoch,sehr hoch,sehr hoch
+08010303,Donaustraße,sehr hoch,sehr hoch,hoch
+08010404,Rixdorf,sehr hoch,sehr hoch,hoch
+08010405,Hertzbergplatz,hoch,hoch,hoch
+08010406,Treptower Straße Nord,sehr hoch,sehr hoch,hoch
+08010407,Gewerbegebiet Ederstraße,unsichere Datenlage,hoch,unsichere Datenlage
+08010508,Weiße Siedlung,sehr hoch,sehr hoch,unterdurchschnittlich
+08010509,Schulenburgpark,sehr hoch,sehr hoch,unterdurchschnittlich
+08010510,Gewerbegebiet Köllnische Heide,unsichere Datenlage,sehr hoch,unsichere Datenlage
+08020619,Buschkrugallee Nord,sehr hoch,sehr hoch,mittel
+08020620,Tempelhofer Weg,hoch,sehr hoch,unterdurchschnittlich
+08020621,Mohriner Allee Nord,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+08020622,Parchimer Allee,mittel,mittel,unterdurchschnittlich
+08020623,Ortolanweg,unsichere Datenlage,hoch,unsichere Datenlage
+08020624,Britzer Garten,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+08020625,Handwerker-Siedlung,unsichere Datenlage,mittel,unsichere Datenlage
+08020726,Buckow West,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+08020727,Buckow Mitte,unterdurchschnittlich,mittel,unterdurchschnittlich
+08020728,Buckow Ost,mittel,hoch,unterdurchschnittlich
+08030829,Gropiusstadt Nord,hoch,sehr hoch,unterdurchschnittlich
+08030830,Gropiusstadt Süd,hoch,sehr hoch,unterdurchschnittlich
+08030831,Gropiusstadt Ost,hoch,sehr hoch,unterdurchschnittlich
+08040932,Goldhähnchenweg,unsichere Datenlage,hoch,unsichere Datenlage
+08040933,Vogelviertel Süd,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+08040934,Vogelviertel Nord,unsichere Datenlage,mittel,unsichere Datenlage
+08041035,Blumenviertel,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+08041036,Zittauer Straße,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+08041037,Alt-Rudow,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+08041038,Waßmannsdorfer Chaussee,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+08041039,Frauenviertel,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+08041040,Waltersdorfer Chaussee Ost,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09010101,Elsenstraße,sehr hoch,mittel,sehr hoch
+09010102,Am Treptower Park Nord,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+09010201,Am Treptower Park Süd,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+09010202,Köpenicker Landstraße,mittel,mittel,unterdurchschnittlich
+09010301,Baumschulenstraße,unterdurchschnittlich,mittel,unterdurchschnittlich
+09010302,Späthsfelde,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+09010401,Johannisthal West,unterdurchschnittlich,unterdurchschnittlich,mittel
+09010402,Johannisthal Ost,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09020501,Oberschöneweide West,sehr hoch,sehr hoch,mittel
+09020502,Oberschöneweide Ost,mittel,hoch,unterdurchschnittlich
+09020601,Schnellerstraße,mittel,mittel,unterdurchschnittlich
+09020602,Oberspree,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+09020701,Adlershof West,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09020702,Adlershof Ost,unterdurchschnittlich,mittel,unterdurchschnittlich
+09020801,Spindlersfeld,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09020802,Köllnische Vorstadt,mittel,hoch,unterdurchschnittlich
+09030901,Dorf Altglienicke,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09030902,Wohngebiet II,unsichere Datenlage,sehr hoch,unsichere Datenlage
+09030903,Kölner Viertel,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09031001,Bohnsdorf,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09031101,Grünau,unterdurchschnittlich,unterdurchschnittlich,hoch
+09031201,Karolinenhof,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+09031202,Schmöckwitz/Rauchfangswerder,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+09041301,Kietzer Feld/Nachtheide,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09041302,Wendenschloß,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09041401,Allende I,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09041402,Allende II,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09041501,Altstadt Kietz,mittel,hoch,unterdurchschnittlich
+09041601,Müggelheim,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09051701,Hirschgarten,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09051702,Bölschestraße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09051801,Rahnsdorf/Hessenwinkel,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09051901,Dammvorstadt,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+09052001,Köpenick Nord,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10010101,Marzahn West,mittel,hoch,unterdurchschnittlich
+10010102,Havemannstraße,hoch,sehr hoch,unterdurchschnittlich
+10010203,Gewerbegebiet Bitterfelder Straße,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+10010204,Wuhletalstraße,mittel,hoch,unterdurchschnittlich
+10010205,Marzahn Ost,mittel,hoch,unterdurchschnittlich
+10010206,Ringkolonnaden,mittel,hoch,unterdurchschnittlich
+10010207,Marzahner Promenade,mittel,hoch,unterdurchschnittlich
+10010308,Marzahner Chaussee,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+10010309,Springpfuhl,mittel,mittel,unterdurchschnittlich
+10010310,Alt-Marzahn,mittel,mittel,unterdurchschnittlich
+10010311,Landsberger Tor,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10020412,Alte Hellersdorfer Straße,sehr hoch,sehr hoch,unterdurchschnittlich
+10020413,Gut Hellersdorf,mittel,hoch,unterdurchschnittlich
+10020414,Helle Mitte,mittel,hoch,unterdurchschnittlich
+10020415,Hellersdorfer Promenade,sehr hoch,sehr hoch,unterdurchschnittlich
+10020416,Böhlener Straße,hoch,sehr hoch,unterdurchschnittlich
+10020517,Adele-Sandrock-Straße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10020518,Schleipfuhl,mittel,hoch,unsichere Datenlage
+10020519,Boulevard Kastanienallee,hoch,sehr hoch,unterdurchschnittlich
+10020620,Kaulsdorf Nord II,unsichere Datenlage,hoch,unsichere Datenlage
+10020621,Gelbes Viertel,mittel,hoch,unterdurchschnittlich
+10020622,Kaulsdorf Nord I,unterdurchschnittlich,mittel,unterdurchschnittlich
+10020623,Rotes Viertel,unsichere Datenlage,mittel,unsichere Datenlage
+10030724,Oberfeldstraße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10030725,Buckower Ring,unterdurchschnittlich,mittel,unterdurchschnittlich
+10030726,Alt-Biesdorf,unterdurchschnittlich,unterdurchschnittlich,mittel
+10030727,Biesdorf Süd,unterdurchschnittlich,unterdurchschnittlich,hoch
+10040828,Kaulsdorf Nord,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10040829,Alt-Kaulsdorf,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10040830,Kaulsdorf Süd,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10040931,Mahlsdorf Nord,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10040932,Alt-Mahlsdorf,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+10040933,Mahlsdorf Süd,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+11010101,Dorf Malchow,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+11010102,Dorf Wartenberg,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+11010103,Dorf Falkenberg,unsichere Datenlage,unterdurchschnittlich,unsichere Datenlage
+11010204,Falkenberg Ost,hoch,sehr hoch,unterdurchschnittlich
+11010205,Falkenberg West,mittel,hoch,unterdurchschnittlich
+11010206,Wartenberg Süd,mittel,hoch,unterdurchschnittlich
+11010207,Wartenberg Nord,mittel,hoch,unterdurchschnittlich
+11010308,Zingster Straße Ost,hoch,hoch,unterdurchschnittlich
+11010309,Zingster Straße West,mittel,sehr hoch,unterdurchschnittlich
+11010310,Mühlengrund,mittel,mittel,unterdurchschnittlich
+11020411,Malchower Weg,unterdurchschnittlich,mittel,unterdurchschnittlich
+11020412,Hauptstraße,mittel,mittel,unterdurchschnittlich
+11020513,Orankesee,unterdurchschnittlich,unterdurchschnittlich,mittel
+11020514,Große-Leege-Straße,unterdurchschnittlich,mittel,unterdurchschnittlich
+11020515,Landsberger Allee,mittel,hoch,unterdurchschnittlich
+11020516,Weiße Taube,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+11030617,Hohenschönhausener Straße,hoch,sehr hoch,unterdurchschnittlich
+11030618,Fennpfuhl West,mittel,mittel,unterdurchschnittlich
+11030619,Fennpfuhl Ost,mittel,hoch,unterdurchschnittlich
+11030720,Herzbergstraße,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+11030721,Rüdigerstraße,unterdurchschnittlich,mittel,mittel
+11030824,Frankfurter Allee Süd,mittel,mittel,unterdurchschnittlich
+11040925,Victoriastadt,unterdurchschnittlich,unterdurchschnittlich,hoch
+11040926,Weitlingstraße,mittel,mittel,mittel
+11041022,Rosenfelder Ring,hoch,hoch,unterdurchschnittlich
+11041023,Gensinger Straße,hoch,hoch,unterdurchschnittlich
+11041027,Tierpark,mittel,mittel,unterdurchschnittlich
+11041128,Sewanstraße,mittel,mittel,unterdurchschnittlich
+11051229,Rummelsburg,unterdurchschnittlich,unterdurchschnittlich,mittel
+11051330,Karlshorst West,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+11051331,Karlshorst Nord,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+11051332,Karlshorst Süd,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+12103115,Breitkopfbecken,hoch,sehr hoch,unterdurchschnittlich
+12103116,Hausotterplatz,hoch,sehr hoch,unterdurchschnittlich
+12103117,Letteplatz,hoch,sehr hoch,unterdurchschnittlich
+12103218,Teichstraße,hoch,hoch,unterdurchschnittlich
+12103219,Schäfersee,sehr hoch,sehr hoch,mittel
+12103220,Humboldtstraße,mittel,hoch,unterdurchschnittlich
+12214125,Waldidyll/Flughafensee,unterdurchschnittlich,unterdurchschnittlich,unterdurchschnittlich
+12214126,Tegel Süd,hoch,sehr hoch,unterdurchschnittlich
+12214421,Reinickes Hof,mittel,hoch,unterdurchschnittlich
+12214422,Klixstraße,sehr hoch,sehr hoch,unterdurchschnittlich
+12214423,Mellerbogen,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12214424,Scharnweberstraße,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12214527,Alt-Tegel,unsichere Datenlage,unsichere Datenlage,mittel
+12214528,Tegeler Forst,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+12224229,Konradshöhe/Tegelort,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+12224230,Heiligensee,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12231101,Hermsdorf,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12231102,Frohnau,unsichere Datenlage,unsichere Datenlage,mittel
+12301203,Wittenau Süd,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12301204,Wittenau Nord,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12301205,Waidmannslust,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12301206,Lübars,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+12302107,Schorfheidestraße,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+12302108,Märkisches Zentrum,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12302109,Treuenbrietzener Straße,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12302110,Dannenwalder Weg,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12302211,Lübarser Straße,unsichere Datenlage,unsichere Datenlage,unsichere Datenlage
+12302212,Rollbergesiedlung,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12304313,Borsigwalde,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich
+12304314,Ziekowstraße/Freie Scholle,unsichere Datenlage,unsichere Datenlage,unterdurchschnittlich

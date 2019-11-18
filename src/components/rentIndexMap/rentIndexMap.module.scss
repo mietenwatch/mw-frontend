@@ -1,0 +1,12 @@
+@import "../../styles/helpers.scss";
+
+.mapContainer {
+  text-align: center;
+  position: relative;
+}
+
+.districtZoomInfo {
+  color: #fff;
+  font-family: $ff-sans;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,80 @@
+@import "../../styles/helpers.scss";
+
+// .chapterNavigation {
+//   list-style: none;
+//   margin: 0;
+//   padding-bottom: 2rem;
+//   text-align: center;
+//   & li {
+//     display: inline-flex;
+//     margin-right: 1rem;
+//     &:last-of-type {
+//       margin-right: 0;
+//     }
+    
+//     & a {
+//       padding: 1.25rem;
+//     border: 3px solid black;
+//     color: black;
+//     font-family: $ff-sans;
+//     font-size: 0.8rem;
+//     font-weight: bold;
+//     text-decoration: none;
+//     text-transform: uppercase;
+//     &:hover {
+//       color: #fff;
+//       background-color: #000;
+//       text-decoration: none;
+//       cursor: pointer;
+//     }
+//   }
+// }
+// }
+
+
+
+.chapterNavigation {
+  display: flex;
+  width:100%;
+  margin:0;
+  padding:0;
+  @include mobile {
+    background:rgba(0,0,0,.05);
+    width:100%;
+    text-align:center;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  & li {
+    background: #eee;
+    font-family:$ff-sans;
+    flex:1;
+    color: #333;
+    font-size: 0.75rem;
+    line-height:0.75rem;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    white-space: pre;
+    margin:0;
+    text-align:center;
+    &:hover {
+      background: #ddd;
+    }
+    &.current {
+      background:rgba(255,255,255,.1);
+      color:white;
+      & a:hover {
+        cursor: default;
+      }
+    }
+    & a {
+      display:block;
+      padding: 1.5rem 1rem;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
